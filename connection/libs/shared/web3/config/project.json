@@ -1,0 +1,16 @@
+{
+  "name": "shared-web3-config",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/web3/config/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/web3/config/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

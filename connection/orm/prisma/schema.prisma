@@ -1,0 +1,1164 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema", "views"]
+}
+
+// Best Practices:
+// By using @updatedAt for the updated_at field, Prisma will update this field with the current datetime whenever an update operation is performed on a recor
+
+// Keep the naming convention consistent across all models, e.g., always use updated_at and not sometimes updatedAt or UpdatedDate, etc.
+
+// Always use DateTime as the type for updated_at.
+
+// It's good to also include a created_at DateTime @default(now()) field for records creation time, along with the updated_at field. This helps in tracking when a record was created and when it was last updated.
+
+// https://supabase.com/partners/integrations/prisma
+// shadowDatabaseUrl = env("PRISMA_SHADOW_DATABASE_URL")
+datasource db {
+  provider          = "postgresql"
+  url               = env("PRISMA_DIRECT_URL")
+  schemas           = ["public", "drmg", "ecommerce",  "reporting" ]
+}
+
+
+model Account {
+  id                        String  @id @default(cuid())
+  userId                    String  @map("user_id")
+  type                      String
+  provider                  String
+  providerAccountId         String  @map("provider_account_id")
+  refreshToken              String? @map("refresh_token") @db.Text
+  accessToken               String? @map("access_token") @db.Text
+  expiresAt                 Int?    @map("expires_at")
+  tokenType                 String? @map("token_type")
+  scope                     String?
+  idToken                   String? @map("id_token") @db.Text
+  sessionState              String? @map("session_state")
+  user                      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@schema("public")
+}
+
+model Session {
+  id                        String   @id @default(cuid())
+  sessionToken              String   @map("session_token") @unique
+  userId                    String   @map("user_id")
+  expires                   DateTime
+  user                      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@schema("public")
+}
+
+model VerificationToken {
+  identifier                String
+  token                     String   @unique
+  expires                   DateTime
+
+  @@unique([identifier, token])
+  @@schema("public")
+}
+
+model User {
+  id                          String    @id @default(cuid())
+  name                        String?
+  email                       String?   @unique
+  emailVerified               DateTime?
+  image                       String?
+  role                        String?
+
+  stripe_customer_id          String?
+  stripe_subscription_id      String?
+  stripe_subscription_status  StripeSubscriptionStatus?
+
+  accounts                    Account[]
+  sessions                    Session[]
+    
+
+  @@schema("public")
+}
+
+enum StripeSubscriptionStatus {
+  incomplete
+  incomplete_expired
+  trialing
+  active
+  past_due
+  canceled
+  unpaid
+  paused
+
+  @@schema("public")
+}
+
+model StripeEvent {
+  id                      String   @id @unique
+  api_version             String?
+  data                    Json
+  request                 Json?
+  type                    String
+  object                  String
+  account                 String?
+  created                 DateTime
+  livemode                Boolean
+  pending_webhooks        Int
+
+  @@schema("public")
+}
+
+
+//////////////////////////// DREAMINEERING ///////////////////////////////////
+
+// create a framework to launch and assess investment in new business ideas.
+// start with convention DB then evaluate what should and can be saved onchain
+
+model Organisation {
+  id                          Int       @id @default(autoincrement())
+  name                        String    // business or protocol
+  elevatorPitch               String? @map("elevator_pitch") @db.Text
+
+  // headquarters location
+  addressOne                  String? @map("address_one") 
+  addressTwo                  String? @map("address_two") 
+  postCode                    String? @map("post_code") 
+  country                     String      // headquarters
+
+  createdAt                   DateTime @map("created_at")   @default(now())
+  updatedAt                   DateTime @map("updated_at")  @updatedAt
+  
+  @@unique([name])
+  @@schema("drmg")
+  @@map("organisations")
+}
+
+model Decision {
+  id                        Int       @id @default(autoincrement())
+
+  // dates
+  dateRequired              DateTime  @map("date_required")
+  dateDecided               DateTime? @map("date_decided")
+  dateExecuteStarted        DateTime? @map("date_execute_started")
+  dateExecuteEnded          DateTime? @map("date_execute_ended")
+  dateOutcomeReviewed       DateTime? @map("date_outcome_reviewed")
+
+  title                     String    // succint headline for the decision
+  category                  String    // Area of life or business the decision affects (e.g., Finance, Health, Project Management)
+  description               String
+  desiredOutcomes           String  @map("desired_outcomes")
+
+  constraints               String?
+  stakeholders              String?
+  informationSources        String? @map("information_sources")
+
+  // consideration set
+  availableOptions          String? @map("available_options")
+  chosenOption              String? @map("chosen_option")
+  reasoning                 String?
+
+  // risk assessment
+  riskLevel                 String? @map("risk_level")              // low, medium, high
+  riskSummary               String? @map("risk_summary")
+  negativeSideEffects       String? @map("negative_side_effects")   // What are the possible negative consequences?
+  probabilityOfFailure      Float?  @map("probability_of_failure")
+
+  // upsides
+  positiveSideEffects       String? @map("positive_side_effects")               // What are the possible benefits?
+  probabilityOfSuccess      Float?  @map("probability_of_success") @default(0)
+  
+  decisionOwnerId           String  @map("decision_owner_id")
+  decisionMakers            String? @map("decision_makers")
+  confidenceLevel           String? @map("confidence_level")
+  
+  // safety net
+  reverseStrategy           String? @map("reverse_strategy") 
+  triggers                  MetricResultBenchmark[]
+
+  // outcome  
+  outcomeResults            String?  @map("outcome_results")
+  outcomeReview             String?  @map("outcomes_vs_expectations_review") @db.Text
+  lessonsLearned            String?  @map("outcome_lessons_learned")
+
+  organisationId            Int @map("organisation_id")
+
+  createdByUserId           String @map("created_by_user_id")
+  updatedByUserId           String @map("updated_by_user_id")
+  createdAt                 DateTime @map("created_at")  @default(now())
+  updatedAt                 DateTime @map("updated_at") @updatedAt
+
+  @@map("decision_log")
+  @@schema("drmg")
+}
+
+
+model ProgressJourney {
+  id                        Int     @id @default(autoincrement())
+  focus                     String? @db.VarChar(50)     // direction, energy, professional, business
+  course                    String? @db.Text            // internal course name  
+  
+  weakness                  String? @db.Text            // client
+  intention                 String? @db.Text            // client
+  achievement               String? @db.Text            // save on chain
+  
+  obstacles                 String? @db.Text            // coach
+  reflection                String? @db.Text            // coach
+  nextSteps                 String? @map("next_steps")  @db.Text            // coach
+  
+  dateJourneyStarted        DateTime @map("date_journey_started")
+  dateJourneyEnded          DateTime @map("date_journey_ended")
+
+  marketableInd             Int? @map("marketable_ind")  @default(0)
+  
+  organisationId            Int @map("organisation_id")
+  // user                      User  @relation(fields: [user_id], references: [id])
+  userId                    String @map("user_id") @unique
+
+  createdAt                 DateTime @map("created_at") @default(now())
+  updatedAt                 DateTime @map("updated_at") @updatedAt
+
+  @@schema("drmg")
+}
+
+
+// rites of passage from the cradle to the grave
+model CommonProblem {
+  id                          Int       @id @default(autoincrement())
+  category                    String    // MSK, health, wealth, relationships, career, business, personal
+  
+  problemTitle                String    @map("problem_title") @unique    // problem name
+  focusDiscipline             String?   @map("focus_discipline")         // Personal Dev | Health | Industry |  Business Ops | Wealth | Social
+  description                 String?   @db.VarChar(255)
+
+  benchmarkSolutionInterval   String?   @map("benchmark_solution_interval")  @db.VarChar(255) @default("Months")  //days, weeks, months, years
+  benchmarkSolutionTimeframe  Int?      @map("benchmark_solution_timeframe") @default(1)  // how many weeks, months, years
+  benchmarkSolutionSessions   Int?      @map("benchmark_solution_sessions") @default(1)
+  benchmarkSolutionPhases     Int?      @map("benchmark_solution_phases") @default(1)
+  benchmarkSolutionCost       Decimal?  @map("benchmark_solution_cost") @default(0)
+
+  bestSolution                SolutionProtocol? @relation("BestSolution", fields: [best_solution_id], references: [id])
+  bestSolutionId              Int?      @map("best_solution_id")
+
+  importSystem                String?   @map("import_system") @db.VarChar(255)    // name of system data imported from
+  importSystemId              Int?      @map("import_system_id")                     // id in the imported system
+  importSystemTitle           String?   @map("import_system_title")  @db.VarChar(255)    // term used in the imported system
+
+  solutions                   SolutionProtocol[] @relation("CommonProblem")
+  
+  @@unique([category, name])
+  @@map(name: "problems")
+  @@schema("drmg")
+}
+
+model SolutionProtocol {
+  id                    Int       @id @default(autoincrement())
+  
+  problem               CommonProblem   @relation("Problem", fields: [problem_id], references: [id])
+  problem_id            Int
+  solution_desc         String    @db.Text
+  
+  solution_interval     String?   @db.VarChar(255) //days, weeks, months, years
+  solution_timeframe    Int?  // how many weeks, months, years
+  solution_sessions     Int?
+  solution_phases       Int?  
+  solution_cost         Decimal?  
+
+  // problems              CommonProblem[] @relation("BestSolution")
+  milestones            SolutionMilestone[]
+
+  @@map(name: "solution_protocols")
+  @@schema("drmg")
+}
+
+model SolutionMilestone {
+  id                  Int       @id @default(autoincrement())
+
+  solution            SolutionProtocol @relation(fields: [solution_id], references: [id])
+  solution_id         Int
+
+  progress_date       DateTime @db.Date
+  progress_check      String?   @db.VarChar(255)
+
+  @@map(name: "solution_protocol_milestones")
+  @@schema("drmg")
+}
+
+
+// Capability Talents/Skills/Interests are developed abilities that allow us to perform tasks or activities well. Talents are often natural aptitudes we are born with, while skills are typically learned and improved over time. Examples include:
+
+  // Artistic ability (drawing, painting, music, etc.)
+  // Logical thinking and problem-solving
+  // Leadership and team management
+  // Public speaking and communication
+  // Technical skills (programming, machinery operation, etc.)
+
+model HumanCapability {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  description   String?   @db.VarChar(255)
+
+  @@map(name: "human_capabilities")
+  @@schema("drmg")
+}
+
+// Values are deeply held beliefs that guide our decisions and behaviors. They reflect what we consider important or worthwhile, and they often influence our goals and motivations. Examples include:
+
+  // Honesty and integrity
+  // Compassion and kindness
+  // Ambition and achievement
+  // Independence and self-reliance
+  // Respect and humility
+
+
+model HumanValue {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  description   String?   @db.VarChar(255)
+
+  @@map(name: "human_values")
+  @@schema("drmg")
+}
+
+// Traits are relatively stable characteristics that define a person's personality. They are usually inherent or developed early in life and remain relatively constant over time. 
+
+// Examples include:
+
+  // Extroversion vs. introversion
+  // Openness to experience
+  // Conscientiousness
+  // Agreeableness
+  // Neuroticism (emotional stability)
+
+model HumanTrait {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  description   String?   @db.VarChar(255)
+
+  @@map(name: "human_traits")
+  @@schema("drmg")
+}
+
+// Behaviors are the actions we perform, often in response to specific situations, stimuli, or thoughts. They can change over time and be influenced by our environment, beliefs, and experiences. Examples include:
+
+  // Procrastination
+  // Aggression
+  // Altruism
+  // Risk-taking
+  // Compliance or defiance
+
+model HumanBehaviour {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  description   String?   @db.VarChar(255)
+
+  @@map(name: "human_behaviours")
+  @@schema("drmg")
+}
+
+// Triggers are stimuli that prompt a certain behavior or emotion. They can come from our external environment or from internal thoughts and feelings. Triggers can be either positive or negative, and they often are connected to our past experiences or deeply held beliefs and values. Understanding your triggers can be an important part of self-awareness and emotional intelligence.
+
+// Here are some examples of triggers:
+
+// **External Triggers** - These are triggers that come from our environment or from other people.
+// **Internal Triggers** - These are triggers that come from our own thoughts, memories, or physical sensations.
+// Triggers can be highly individual, and what triggers one person may not have the same effect on another. 
+// Triggers can change over time as we grow, have new experiences, and develop new perspectives.
+
+model HumanTrigger {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  type          String    @db.VarChar(255)                // internal or external
+  description   String?   @db.VarChar(255)
+
+  @@map(name: "human_triggers")
+  @@schema("drmg")
+}
+
+// Motivations / Desires are the underlying reasons for our actions. They are often unconscious and can change over time. Examples include:
+
+  // Power
+  // Achievement
+  // Affiliation
+  // Security
+  // Autonomy
+
+model HumanMotivation {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  type          String    @db.VarChar(255)                // internal or external
+  description   String?   @db.VarChar(255)
+
+  contacts      ContactMotivation[]
+
+  @@map(name: "human_motivations")
+  @@schema("drmg")
+}
+
+
+model ContactPerson {
+  id                        Int       @id @default(autoincrement())
+  firstName                 String    @map("first_name")
+  lastName                  String    @map("last_name")
+  mobile                    String?
+  email                     String?
+
+  // social influence
+  social_influence_rank     Int?      @default(0)
+  social_youtube            String?   @db.VarChar(255)
+  social_instagram          String?   @db.VarChar(255)
+  social_facebook           String?   @db.VarChar(255)
+  social_x                  String?   @db.VarChar(255)
+  social_linkedin           String?   @db.VarChar(255)
+  social_tiktok             String?   @db.VarChar(255)
+
+  notes                     String?   @db.Text
+  // conversations             String?   @db.Text
+  // proof of identity?
+
+  user                      User?  @relation(fields: [user_id], references: [id])
+  userId                    String? @map("user_id") @unique
+
+  interactions              ContactInteraction[]
+  // businessAssociations      BusinessContact[]     // past and present employers, companies.
+
+  motivations               ContactMotivation[]
+  business_capabilities     ContactBusinessFunctionCapability[]
+
+  organisationId            Int? @map("organisation_id")
+
+  // @@unique([email])
+  @@schema("drmg")
+	@@map("human_contacts")
+}
+
+model ContactInteraction {
+  id                    Int       @id @default(autoincrement())
+  contact               ContactPerson   @relation(fields: [contact_id], references: [id])
+  contact_id            Int 
+
+  user                  User      @relation(fields: [user_id], references: [id])
+  user_id               String 
+
+  type                  String    @db.VarChar(255)  // call, email, meeting, sms, letter, social media, other
+  purpose               String?   @db.Text          // could link this to a strategic template
+  notes                 String?   @db.Text
+  
+  @@schema("drmg")
+	@@map("contact_interactions")
+}
+
+model ContactMotivation {
+  contact                   ContactPerson @relation(fields: [contact_id], references: [id])
+  contact_id                Int  
+  motivation                HumanMotivation @relation(fields: [motivation_id], references: [id])
+  motivation_id             Int
+
+  subjective                String?   @db.Text
+  subjective_rank           Int?      @default(0)
+
+  objective                 String?   @db.Text
+  objective_rank            Int?      @default(0)
+
+  created_at                DateTime @default(now())
+  updated_at                DateTime @updatedAt
+
+  @@id([contact_id, motivation_id])
+  @@map(name: "contact_motivations")
+  @@schema("drmg")
+}
+
+// isolate vs what relevant
+model ContactBusinessFunctionCapability {
+  id                        Int       @default(autoincrement())
+  
+  contact                   ContactPerson @relation(fields: [contact_id], references: [id])
+  contact_id                Int 
+  
+  business_function         BusinessFunction @relation(fields: [business_function_id], references: [id])
+  business_function_id      Int
+
+  subjective                String?   @db.Text
+  subjective_rank           Int?      @default(0)
+
+  objective                 String?   @db.Text
+  objective_rank            Int?      @default(0)
+
+  created_at                DateTime  @default(now())
+  updated_at                DateTime  @updatedAt
+
+  @@id([contact_id, business_function_id])
+  @@map(name: "contact_business_function_capabilities")
+  @@schema("drmg")
+}
+
+model BusinessContact {
+  business          Organisation @relation(fields: [business_id], references: [id])
+  business_id       Int
+  contact           ContactPerson @relation(fields: [contact_id], references: [id])
+  contact_id        Int
+
+  currentlyActive   Int @default(1)
+  connectionType    String
+  connectionNotes   String?   @db.Text
+  email             String?   @db.VarChar(255)
+  mobile            String?   @db.VarChar(100)
+  country           String?   @db.VarChar(255)
+  location          String?   @db.VarChar(255)
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@id([business_id, contact_id])
+  @@schema("drmg")
+	@@map("business_contacts")
+}
+
+model BusinessTradePartner {
+  business                  Organisation @relation("TradePartners", fields: [businessId], references: [id])
+  businessId                Int  
+  tradePartner              Organisation @relation("TradePartnersReverse", fields: [tradePartnerId], references: [id])
+  tradePartnerId            Int
+
+  currentlyActive           Int @default(1)
+  isDebtor                  Int @default(0)         // customer
+  isCreditor                Int @default(0)         // supplier
+  connectionNotes           String?  @db.Text
+
+  createdAt                 DateTime @default(now())
+  updatedAt                 DateTime @updatedAt
+
+  @@id([businessId, tradePartnerId])
+  @@schema("drmg")
+	@@map("business_trade_partner")
+}
+
+ // "sales", "marketing", "finance", "operations", "hr", "legal", "it", "product", "strategy"
+model BusinessFunction {
+  id                    Int @id @default(autoincrement())
+  name                  String  @unique      
+  description           String
+  function_type         String?  // "primary", "secondary", "management", "strategic"
+  is_core_function      Int? @default(0)
+  // industry
+
+  ledgers               AccountsLedger[]
+  expenses              ExpensePayment[]
+  metrics               BusinessFunctionMetric[]
+  processes             BusinessFunctionProcess[]
+  human_resources       ContactBusinessFunctionCapability[]
+
+  @@schema("drmg")
+  @@map("business_functions")
+}
+
+model BusinessIdea {
+  id              Int           @id @default(autoincrement())
+  title           String        @unique
+  description     String
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  categories      Category[]    @relation("CategoryToIdea")
+  interviews      JobToBeDoneInterview[]
+  valueHorizon    IdeaValueExpectations[]
+
+  organisationId  Int? @map("organisation_id")
+
+
+  @@schema("drmg")
+  @@map("business_ideas")
+}
+
+model Category {
+  id          Int           @id @default(autoincrement())
+  name        String        @unique
+  description String?
+  ideas       BusinessIdea[] @relation("CategoryToIdea")
+
+  @@schema("drmg")
+  @@map("idea_categories")
+}
+
+model IdeaValueExpectations {
+  id                Int          @id @default(autoincrement())
+  riskFactor        Float        // Range between 0 to 1
+  expectedReturns   Float        // Anticipated value returns
+  timeHorizon       String       // Could be 'short-term', 'medium-term', 'long-term'
+  businessIdea      BusinessIdea @relation(fields: [businessIdeaId], references: [id])
+  businessIdeaId    Int
+
+  contactId         Int?         // Contact that provided the value expectations
+
+  @@schema("drmg")
+  @@map("business_idea_value_expectations")
+}
+
+model JobToBeDoneInterview {
+  id            Int          @id @default(autoincrement())
+  date          DateTime     @default(now())
+  respondent    String
+  job           String
+  painPoints    String
+  outcome       String
+  businessIdea  BusinessIdea @relation(fields: [businessIdeaId], references: [id])
+  businessIdeaId Int
+
+  @@schema("drmg")
+  @@map("business_jtbd_interviews")
+}
+
+
+model BusinessFunctionRole {
+  id                        Int      @id @default(autoincrement())
+  roleTitle                 String   @db.VarChar(100)                
+  businessFunctionId        Int      // best fit
+  
+  median_annual_salary      Float?           
+  median_hourly_salary      Float?           
+  high_annual_salary        Float?           
+  high_hourly_salary        Float?     
+
+  IsBenchmarkedInd          Int? @default(0)  // 0 = no, 1 = yes  
+
+  organisationId            Int?
+  organisationName          Int
+
+  // break salary down by country, region and date range later
+  @@map(name: "business_function_roles")
+  @@schema("drmg")
+}
+
+// use for comparative business analysis
+model BusinessFunctionProcess {
+  id                        Int @id @default(autoincrement())
+  name                      String  @unique
+  description               String? @db.Text
+  essential_ind             Int? @default(0)
+
+  mindsetMatch              String?             // required mindset - Deep Work, Creative, Process Driven, Unstructured
+
+  aiAgent                   String?             // best AI agent to do the job
+  aiAgentCapability         Int? @default(0)    // 0-5 rating for success (needs quantifying rules)
+
+  businessFunction          BusinessFunction @relation(fields: [business_function_id], references: [id])
+  businessFunctionId        Int
+  ledger                    AccountsLedger? @relation(fields: [ledger_id], references: [id])
+  ledgerId                  Int?
+
+  inputs                    String?       // What resources, information, or materials are required to start the process.
+  action_trigger            String?       // what triggers the action
+  action_schedule           String?       // daily, weekly, monthly, quarterly, yearly, etc.
+  
+  // Methods
+  process_steps             String?       // Each action or task that takes place within the process, often represented as a flowchart or diagram 
+  step_ownership_roles      String?       // Which roles are responsible for each step of the process
+  risks_and_controls        String?       // Any potential issues that could arise during the process, and how they are managed or mitigated
+
+  outputs                   String?       // What the process produces or achieves.
+  dependencies              String?       // Dependencies: Other processes that this process relies on or that rely on this process
+
+  // Targeted Industry
+  industry_specific_ind     Int? @default(0)
+  industry                  String?
+
+  // Meta
+  meta_status               String? @default("draft")   // "draft", "active", "retired"
+  meta_version              Int?    @default(0)         // The version number of the process map or model.
+  meta_changelog            String? @db.Text            // Records of changes made to the process, including what was changed, who changed it, and why it was changed.
+  meta_comments             String? @db.Text            // Any comments or notes about the process.
+  process_map_exists_ind    Int? @default(0)            // 0 = no, 1 = yes
+  process_map_rating        Int? @default(0)            // 0 - 5
+
+
+  // quality / flow control
+  // Primary KPI used to measure the effectiveness and efficiency of the process
+  metrics                   BusinessFunctionMetric[]
+  action_triggers           MetricResultBenchmark[]
+
+  organisationId            Int @map("organisation_id")
+
+  createdByUserId           String @map("created_by_user_id")
+  updatedByUserId           String @map("updated_by_user_id")
+  createdAt                 DateTime @map("created_at")  @default(now())
+  updatedAt                 DateTime @map("updated_at") @updatedAt
+
+  @@schema("drmg")
+  @@map("business_function_procedures")
+}
+
+model ChatGptPrompts {
+  id                              Int @id @default(autoincrement())
+  title                           String @unique
+  prompt                          String @db.Te
+  notes                           String? @db.Text
+  discipline                      String? @db.Text  // Personal, Health, Business, Engineering, Science
+  function                        String? @db.VarChar(100)  // Sales, Marketing, Finance, HR, etc.
+  industry                        String? @db.VarChar(100)
+  tags                            String? @db.Text  
+  
+  organisationId                  Int @map("organisation_id")
+  createdByUserId                 String @map("created_by_user_id")
+  updatedByUserId                 String @map("updated_by_user_id")
+  createdAt                       DateTime @map("created_at")  @default(now())
+  updatedAt                       DateTime @map("updated_at") @updatedAt
+
+  @@schema("drmg")
+  @@map("chat_gpt_prompts")
+}
+
+
+//////////////// FINANCIALS ////////////////////
+
+model AccountsLedger {
+  id                              Int      @id @default(autoincrement())
+  code                            String   @unique // "1000", "2000", etc.
+  parentCode                      String   // "1000", "2000", etc.
+  type                            String   // "debit" or "credit" or "metric"
+  category                        String   //  expense, revenue, asset, liability, equity, metric
+  description                     String
+
+  parentLedger                    AccountsLedger?  @relation("ParentLedger", fields: [parentCode], references: [code])
+  childLedgers                    AccountsLedger[] @relation("ParentLedger")
+
+  businessFunction                BusinessFunction @relation(fields: [businessFunctionId], references: [id])
+  businessFunctionId              Int  
+
+  businessProcedures              BusinessFunctionProcess[]
+  // chargeTypes                     ChargeType[]
+  recurringExpenses               RecurringExpense[]
+  expenses                        ExpensePayment[]
+
+  organisationId                  Int @map("organisation_id")
+  createdByUserId                 String @map("created_by_user_id")
+  updatedByUserId                 String @map("updated_by_user_id")
+  createdAt                       DateTime @map("created_at")  @default(now())
+  updatedAt                       DateTime @map("updated_at") @updatedAt
+
+  @@schema("drmg")
+  @@map("ledger")
+}
+
+model RecurringExpense {
+  id                  Int      @id @default(autoincrement())
+
+  business            Organisation @relation("BusinessRecurringExpenses", fields: [business_id], references: [id])
+  business_id         Int  
+
+  creditor            Organisation  @relation("CreditorRecurringExpenses", fields: [creditor_id], references: [id])
+  creditor_id         Int
+
+  ledger              AccountsLedger  @relation(fields: [ledger_id], references: [id])
+  ledger_id           Int
+
+  name                String
+  description         String
+  frequency           String   // "weekly", "monthly", "quarterly", "annually"
+  interval            Int      // e.g., every 2 weeks, every 3 months
+  next_due_date       DateTime  // use logic to update after each period
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  expenses            ExpensePayment[]
+  organisation_id         Int?
+  
+  @@unique([name, business_id])
+  @@schema("drmg")
+  @@map("recurring_expense")
+}
+
+
+model ExpensePayment {
+  id                    Int      @id @default(autoincrement())
+  type                  String   @default("actual")               // "budget" or "actual"
+
+  business              Organisation @relation("BusinessExpenses", fields: [business_id], references: [id])
+  business_id           Int  
+  organisation_id           Int?
+
+  business_function_id  Int?  
+  businessFunction      BusinessFunction? @relation(fields: [business_function_id], references: [id])
+
+  ledger                AccountsLedger  @relation(fields: [ledger_id], references: [id])
+  ledger_id             Int
+  creditor              Organisation?  @relation("CreditorExpenses",fields: [creditor_id], references: [id])
+  creditor_id           Int?  
+  
+  name                  String
+  notes                 String?
+  amount                Float
+  date_paid             DateTime
+
+  date_due              DateTime?
+  invoice_no            String?
+  created_at            DateTime @default(now())
+  updated_at            DateTime @updatedAt
+
+  recurring_expense     RecurringExpense? @relation(fields: [recurring_expense_id], references: [id])
+  recurring_expense_id  Int?
+  
+  resource_hours        ExpenseResourceHour[]
+  material_items        ExpenseMaterialItem[]
+
+
+  @@unique([ledger_id, date_paid, type, business_id, name])
+  @@schema("drmg")
+  @@map("expense_payments")  
+}
+
+// this should be an appointment time
+model ExpenseResourceHour {
+  id                    Int      @id @default(autoincrement())
+  
+  expense               ExpensePayment @relation(fields: [expense_id], references: [id])
+  expense_id            Int
+  
+  // Process Workflow
+
+  // Human Resource
+  name                  String
+  description           String?
+  unit_quantity         Float
+  unit_rate             Float
+  value_amount          Float
+
+  organisation_id           Int?
+
+  @@schema("drmg")
+  @@map("expense_resource_hours")  
+}
+
+model ExpenseMaterialItem {
+  id                    Int      @id @default(autoincrement())
+  
+  expense               ExpensePayment @relation(fields: [expense_id], references: [id])
+  expense_id            Int
+  
+  name                  String
+  description           String?
+  unit_quantity         Float
+  unit_cost             Float
+  value_amount          Float
+  organisation_id           Int?
+
+  @@schema("drmg")
+  @@map("expense_material_items")  
+}
+
+
+/////////////////////////////////////////////////////////////////////
+///                           REPORTING                           ///
+/////////////////////////////////////////////////////////////////////
+
+model BusinessAdminAnalysis {
+  id                        Int       @id @default(autoincrement())
+  report_start_date         DateTime  @db.Date                        
+  report_end_date           DateTime  @db.Date
+  report_period             String    @db.VarChar(50)   // week, month, quarter, year
+  
+  site_id                   BigInt
+  site_name                 String?   @db.VarChar(50)
+  employee_id               BigInt
+  employee_name             String?   @db.VarChar(50)
+
+  business_function_id      Int?
+  business_function_name    String?             // Accounting, Marketing, Customer Success etc
+  business_process_id       Int?                // - 1 = all , related types, primary, supporting, management (operational), strategic (executive), unstructured
+  business_process          String?             // Job (content creation and advertising spend for marketing)
+  labour_hours              Float?              // 0.00
+  labour_cost               Float?              // 0.00
+
+  organisation_id           Int?
+
+  @@map(name: "business_admin_analysis")
+  @@schema("reporting")
+}
+
+// Measure the Performance of key business processes / procedures
+// one process can have many related metrics to judge its performance
+model BusinessFunctionMetric {
+  id                        Int @id @default(autoincrement())
+  name                      String  @unique
+  description               String?   
+
+  method                    String?   // how is data collected and calculated        
+  measure_type              String?   // count, percentage, sum, average, etc.
+  measure_unit              String?   // dollars, hours, etc.
+  improved_by               String?   // increasing, decreasing
+
+  business_function         BusinessFunction @relation(fields: [business_function_id], references: [id])
+  business_function_id      Int
+
+  procedure_measured        BusinessFunctionProcess? @relation(fields: [procedure_measured_id], references: [id])
+  procedure_measured_id     Int?    // multiple metrics per process so not @unique
+  
+  default_benchmark         Float?              // what is the default benchmark for this metric
+  // solution_workflow         ProcedureFailureWorkflow?        
+
+  industry_specific_ind     Int? @default(0)
+  industry                  String?
+
+  results                   BusinessMetricResult[]
+  benchmarks                MetricResultBenchmark[]
+
+  organisation_id               Int?
+
+  @@schema("reporting")
+  @@map("business_function_metrics")
+}
+
+
+// NOTE USE DRMG ORG ID AS FALLBACK
+model MetricResultBenchmark {
+  id                      Int @id @default(autoincrement())
+
+  business                Organisation @relation(fields: [organisation_id], references: [id])
+  organisation_id         Int                                                               
+
+  metric                  BusinessFunctionMetric @relation(fields: [metric_id], references: [id])  // definition
+  metric_id               Int  
+
+  decision                Decision? @relation(fields: [decision_id], references: [id])  // definition
+  decision_id             Int?
+
+  grouped_by              String        // "business", "site", "role", "person"
+  group_entity            String        // "Better Practice", "Chiswick", "Provider", "Nate"
+  group_entity_id         BigInt?       // business_id, site_id, role_id, person_id
+  measured_item           String?       // (All - Null) or Accounting, Finance, HR, etc.
+
+  trigger_type            String        // success or failure
+  value_type              String?       // "number", "percentage", "currency", "boolean", "text"
+  threshold_value         Float
+  
+  threshold_procedure     BusinessFunctionProcess? @relation(fields: [threshold_procedure_id], references: [id])
+  threshold_procedure_id  Int? 
+
+  date_from               DateTime
+  date_to                 DateTime
+  measured_period         String        // "snapshot", "daily", "weekly", "monthly", "quarterly", "yearly", "custom"
+  day_of_week             String?       // "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"
+  period_number           Int?          // 1-12 month or 1-4 quarter or 1-52 week
+
+
+  created_at              DateTime @default(now())
+  updated_at              DateTime @updatedAt
+
+  @@schema("reporting")
+  @@map("business_metric_benchmarks")
+}
+
+
+// Aim to create a generic table that can be sent to frontend with presentation logic
+model BusinessMetricResult {
+  id                    Int @id @default(autoincrement())
+
+  business              Organisation @relation(fields: [business_id], references: [id])
+  business_id           Int  
+  organisation_id           Int?
+
+  metric                BusinessFunctionMetric @relation(fields: [metric_id], references: [id])
+  metric_id             Int  
+
+  data_type             String        // what data entity is getting measured
+  data_source           String        // where is the data coming from
+  grouped_by            String        // "business", "location", "role", "person"
+  group_entity          String        // name of grouped entity
+  group_entity_id       BigInt?       // id of grouped entity business_id, site_id, role_id, person_id
+
+  measured_item         String?       // optional sub category related to group entity or empty for total.
+
+  value                 Float
+  value_type            String?       // "number", "percentage", "currency", "boolean", "text"
+  
+  date                  DateTime
+  date_year             Int?
+  period_number         Int?          // 1-12 month or 1-4 quarter or 1-52 week
+  
+  measured_period       String        // "snapshot", "daily", "weekly", "monthly", "quarterly", "yearly", "custom"
+  day_of_week           String?       // "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"
+
+
+  @@unique([business_id, metric_id, data_type, data_source, date, grouped_by, group_entity_id, measured_period, measured_item])
+  @@schema("reporting")
+  @@map("business_metric_results")
+}
+
+
+/////////////////////////////////////////////////////////////////////
+///           SOFTWARE PRODUCTS & DEVELOPMENT PROCESSES           ///
+/////////////////////////////////////////////////////////////////////
+
+// CRM, CMS, ERP, Accounting, etc.
+model SoftwareProductType {
+  id                    Int @id @default(autoincrement())
+  name                  String  @unique
+
+  products              SoftwareProduct[]
+
+  @@schema("drmg")
+  @@map("software_product_types")
+}
+
+// Common Product Functions
+model SoftwareFunction {
+  id                    Int @id @default(autoincrement())
+  name                  String  @unique
+  description           String?  @db.Text
+
+  products              SoftwareProductFunction[]
+
+  @@schema("drmg")
+  @@map("software_functions")
+}
+
+
+
+
+// Tools like Hubspot, Salesforce, etc.
+model SoftwareProduct{
+  id                      Int @id @default(autoincrement())
+  name                    String  @unique
+  url                     String?
+  ai_rating               Int    @default(0) // 0-5
+  blockchain_rating       Int    @default(0) // 0-5
+  api_rating              Int    @default(0) // 0-5
+  api_integration_count   Int    @default(0)
+  description             String? @db.Text
+  use_case_notes          String? @db.Text
+  has_free_version        Int     @default(0)
+  base_price              Float?              // initial tier
+  pricing_notes           String? @db.Text    
+
+  primary_product_type    SoftwareProductType? @relation(fields: [product_type_id], references: [id])
+  product_type_id         Int?
+
+  functions               SoftwareProductFunction[]
+  integrated_products     SoftwareProductIntegration[]@relation("integrated_products")
+  reverse_integrations    SoftwareProductIntegration[]@relation("reverse_integrations")
+
+  @@schema("drmg")
+  @@map("software_products")
+}
+
+
+
+model SoftwareProductFunction {
+  id                    Int @default(autoincrement())
+
+  product               SoftwareProduct @relation(fields: [product_id], references: [id])
+  product_id            Int
+
+  software_function     SoftwareFunction @relation(fields: [software_function_id], references: [id])
+  software_function_id  Int
+
+  @@id([product_id, software_function_id])
+  @@schema("drmg")
+  @@map("software_product_functions")
+}
+
+
+// API Interfaces
+model SoftwareProductIntegration {
+  id                      Int @default(autoincrement())
+
+  product                 SoftwareProduct @relation("integrated_products", fields: [product_id], references: [id])
+  product_id              Int
+
+  // or govt service such as ACC
+  integrated_product      SoftwareProduct @relation("reverse_integrations", fields: [integrated_product_id], references: [id])
+  integrated_product_id   Int
+  rating                  Int    @default(0) // 0-5
+  notes                   String?
+
+  @@id([product_id, integrated_product_id])
+  @@schema("drmg")
+  @@map("software_product_integrations")
+
+}
+
+model SoftwareEngineeringFunction {
+  id                    Int @id @default(autoincrement())
+  name                  String  @unique
+  description           String
+  // industry
+  procedures            SoftwareEngineeringProcedure[]
+
+  @@schema("drmg")
+  @@map("software_engineering_functions")
+}
+
+
+model SoftwareEngineeringProcedure {
+  id                                  Int @id @default(autoincrement())
+  name                                String  @unique
+  description                         String
+  SoftwareEngineeringFunction         SoftwareEngineeringFunction @relation(fields: [software_engineering_function_id], references: [id])
+  software_engineering_function_id    Int
+
+  ai_agent                            String?
+  ai_agent_rating                     Int? @default(0) // 0-5
+  // industry
+
+  @@schema("drmg")
+  @@map("software_engineering_procedures")
+}
+
+
+// ********* END OF SOFTWARE ENGINEERING AND PRODUCTS ANALYSIS  ********** //
+
+
+
+
+model Board {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(255)
+  userId    String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  User      User     @relation(fields: [userId], references: [id])
+  Column    Column[]
+
+  @@unique([name, userId])
+  @@schema("drmg")
+}
+
+model Column {
+  name      String   @db.VarChar(255)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  id        Int      @id @default(autoincrement())
+  boardId   Int
+  board     Board    @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  Task      Task[]
+
+  @@unique([name, boardId])
+  @@schema("drmg")
+}
+
+model Task {
+  title       String    @db.VarChar(255)
+  description String?
+  statusName  String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  id          Int       @id @default(autoincrement())
+  boardId     Int
+  order       Int       @default(autoincrement())
+  SubTask     SubTask[]
+  status      Column    @relation(fields: [statusName, boardId], references: [name, boardId], onDelete: Cascade)
+
+  @@unique([title, boardId])
+  @@schema("drmg")
+}
+
+model SubTask {
+  title       String
+  isCompleted Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  id          Int      @id @default(autoincrement())
+  taskId      Int
+  mainTask    Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@unique([title, taskId])
+  @@schema("drmg")
+}

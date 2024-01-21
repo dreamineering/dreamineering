@@ -1,0 +1,27 @@
+[submodule "bc/evm/cyfrin/simple-storage/lib/forge-std"]
+	path = bc/evm/cyfrin/simple-storage/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "bc/evm/cyfrin/fundme/lib/forge-std"]
+	path = bc/evm/cyfrin/fundme/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "bc/evm/cyfrin/fundme/lib/chainlink-brownie-contracts"]
+	path = bc/evm/cyfrin/fundme/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "bc/evm/cyfrin/fundme/lib/foundry-devops"]
+	path = bc/evm/cyfrin/fundme/lib/foundry-devops
+	url = https://github.com/ChainAccelOrg/foundry-devops
+[submodule "bc/evm/cyfrin/smart-lottery/lib/forge-std"]
+	path = bc/evm/cyfrin/smart-lottery/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "bc/evm/cyfrin/smart-lottery/lib/chainlink-brownie-contracts"]
+	path = bc/evm/cyfrin/smart-lottery/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "bc/evm/cyfrin/stablecoin/lib/forge-std"]
+	path = bc/evm/cyfrin/stablecoin/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "bc/evm/cyfrin/stablecoin/lib/openzeppelin-contracts"]
+	path = bc/evm/cyfrin/stablecoin/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "bc/evm/cyfrin/stablecoin/lib/chainlink-brownie-contracts"]
+	path = bc/evm/cyfrin/stablecoin/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts

@@ -1,0 +1,54 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mates/shared-ui-scaffold-eth": [
+        "libs/shared/ui-scaffold-eth/src/index.ts"
+      ],
+      "@mates/shared-ui-scaffold-eth/server": [
+        "libs/shared/ui-scaffold-eth/src/server.ts"
+      ],
+      "@mates/shared-ui-shadcn": ["libs/shared/ui-shadcn/src/index.ts"],
+      "@mates/shared-ui-shadcn/forms": ["libs/shared/ui-shadcn/src/forms.ts"],
+      "@mates/shared-ui-shadcn/server": ["libs/shared/ui-shadcn/src/server.ts"],
+      "@mates/shared-utils": ["libs/shared/utils/src/index.ts"],
+      "@mates/shared-utils/server": ["libs/shared/utils/src/server.ts"],
+      "@mates/shared-web3-config": ["libs/shared/web3/config/src/index.ts"],
+      "@mates/shared-web3-config/server": [
+        "libs/shared/web3/config/src/server.ts"
+      ],
+      "@mates/shared-web3-contracts": [
+        "libs/shared/web3/contracts/src/index.ts"
+      ],
+      "@mates/shared-web3-contracts/server": [
+        "libs/shared/web3/contracts/src/server.ts"
+      ],
+      "@mates/shared-web3-services": ["libs/shared/web3/services/src/index.ts"],
+      "@mates/shared-web3-services/server": [
+        "libs/shared/web3/services/src/server.ts"
+      ],
+      "@mates/shared-web3-store": ["libs/shared/web3/store/src/index.ts"],
+      "@mates/shared-web3-store/server": [
+        "libs/shared/web3/store/src/server.ts"
+      ],
+      "@mates/shared-web3-utils": ["libs/shared/web3/utils/src/index.ts"],
+      "@mates/shared-web3-utils/server": [
+        "libs/shared/web3/utils/src/server.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

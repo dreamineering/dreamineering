@@ -1,0 +1,61 @@
+{
+  "name": "demo-scaffold-eth",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/examples/scaffold-eth",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/examples/scaffold-eth"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/examples/scaffold-eth"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "demo-scaffold-eth:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "demo-scaffold-eth:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "demo-scaffold-eth:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "demo-scaffold-eth:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/examples/scaffold-eth/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/examples/scaffold-eth/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

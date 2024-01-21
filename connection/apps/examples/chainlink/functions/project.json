@@ -1,0 +1,63 @@
+{
+  "name": "demo-chainlink-functions",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/examples/chainlink/functions",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/examples/chainlink/functions"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/examples/chainlink/functions"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "demo-chainlink-functions:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "demo-chainlink-functions:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "demo-chainlink-functions:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "demo-chainlink-functions:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/examples/chainlink/functions/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/examples/chainlink/functions/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

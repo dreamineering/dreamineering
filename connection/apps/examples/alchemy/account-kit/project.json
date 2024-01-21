@@ -1,0 +1,63 @@
+{
+  "name": "demo-alchemy-aa",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/examples/alchemy/account-kit",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/examples/alchemy/account-kit"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/examples/alchemy/account-kit"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "demo-alchemy-aa:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "demo-alchemy-aa:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "demo-alchemy-aa:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "demo-alchemy-aa:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/examples/alchemy/account-kit/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/examples/alchemy/account-kit/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
