@@ -1,4 +1,4 @@
-# Stackmates
+# Dreamineering
 
 How do you gain maximum leverage to optimise creation and distribution of value?
 
@@ -21,11 +21,12 @@ Drive growth with [experiments](https://mm.dreamineering.com/docs/grow/growth-ex
 
 ## Tech Stack
 
-Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
+Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
 
-- Business Software
-- [Software Development](https://mm.dreamineering.com/docs/engineering/software/sdk/)
-- Infrastructure
+- [Business Software](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
+- [Solution Stack](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/)
+- [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-stack-decisions/)
+- [AI LLMs](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/ai-llms/)
 
 It is easier to edit or delete than to conceive and create when getting started. Mastery is being able to delete as much as possible to achieve desired results.
 
