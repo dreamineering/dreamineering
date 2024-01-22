@@ -34,7 +34,7 @@ Protocols vs best tech and impact?
 
 ## Engineering
 
-Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
+[Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/) run the world. Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
 
 - [Business Software](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
 - [Solution Stack](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/)
