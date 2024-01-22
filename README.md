@@ -6,8 +6,6 @@ How do you gain maximum leverage to optimise creation and distribution of value?
 - [B](https://github.com/dreamineering/stackmates/tree/main/bc)
 - [C](https://github.com/dreamineering/stackmates/tree/main/connection)
 
-[Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business).
-
 ## Growth
 
 Drive growth with [experiments](https://mm.dreamineering.com/docs/grow/growth-experiments/).
@@ -19,7 +17,22 @@ Drive growth with [experiments](https://mm.dreamineering.com/docs/grow/growth-ex
 - Howzus: Brewery & Social
 - Blockchain Golf: Learn crypto through play
 
-## Tech Stack
+## Business
+
+[Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business).
+
+| Protocols                                                    | ZKP | AI  | Blockchain | Tokenization |
+| ------------------------------------------------------------ | --- | --- | ---------- | ------------ |
+| Identity                                                     |     |     |            |              |
+| DeFi                                                         |     |     |            |              |
+| DeSci                                                        |     |     |            |              |
+| DePin                                                        |     |     |            |              |
+| DAOs                                                         |     |     |            |              |
+| [Play](https://mm.dreamineering.com/docs/grow/play-to-grow/) |     |     |            |              |
+
+Protocols vs best tech and impact?
+
+## Engineering
 
 Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
 
@@ -27,6 +40,8 @@ Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/soft
 - [Solution Stack](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/)
 - [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-stack-decisions/)
 - [AI LLMs](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/ai-llms/)
+
+Conviction: All software is converging on games.
 
 It is easier to edit or delete than to conceive and create when getting started. Mastery is being able to delete as much as possible to achieve desired results.
 
