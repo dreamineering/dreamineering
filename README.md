@@ -19,18 +19,18 @@ Drive growth with [experiments](https://mm.dreamineering.com/docs/grow/growth-ex
 
 ## Business
 
-[Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business).
+[Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business) via incorruptible systems of governance.
 
-| Protocols                                                     | ZKP | AI  | Blockchain | Tokenization |
-| ------------------------------------------------------------- | --- | --- | ---------- | ------------ |
-| Identity                                                      |     |     |            |              |
-| DeFi                                                          |     |     |            |              |
-| DeSci                                                         |     |     |            |              |
-| DePin                                                         |     |     |            |              |
-| DAOs                                                          |     |     |            |              |
-| [Games](https://mm.dreamineering.com/docs/grow/play-to-grow/) |     |     |            |              |
+| Protocols                                                                                                                        | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Tokenomics |
+| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --- | ---------- | ---------- |
+| [Identity](https://mm.dreamineering.com/docs/business/business-principles/web3-principles/web3-principle-decentralised-identity) |                                                                                                                              |     |            |            |
+| [DeFi](https://mm.dreamineering.com/docs/value/tokenomics/tokenomics-defi/defi-primitives/)                                      |                                                                                                                              |     |            |            |
+| [Games](https://mm.dreamineering.com/docs/grow/play-to-grow/)                                                                    |                                                                                                                              |     |            |            |
+| [DAOs](https://mm.dreamineering.com/docs/people/networks/network-states/)                                                        |                                                                                                                              |     |            |            |
+| [DeSci](https://mm.dreamineering.com/docs/science/platform-desci)                                                                |                                                                                                                              |     |            |            |
+| [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)                                                        |                                                                                                                              |     |            |            |
 
-Protocols vs best tech and impact?
+Protocols vs best tech vs impact?
 
 ## Engineering
 
