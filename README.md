@@ -53,9 +53,12 @@ Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/soft
 - [AI LLMs](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/ai-llms/)
 - [Business Tools](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
 
-Conviction: Games push tech to creative limits. Playing games builds trust and loyalty. All software is converging on becoming a game.
+[Convictions](https://mm.dreamineering.com/docs/grow/decision-process/decision-perspective/big-picture-convictions)
 
-Conviction: Collecting and processing trusted proprietary data is where the value lies.
+- Games push tech to creative limits. Playing games builds trust and loyalty. All software is converging on becoming a game.
+- Collecting and processing trusted proprietary data is where the value lies.
+- For a piece of information to be valuable it needs to be actionable.
+- Any protocol is only going to be valuable as it's [proprietary data](https://mm.dreamineering.com/docs/engineering/software-engineering/algorithms/routing-algorithm).
 
 ### Blockchains
 
