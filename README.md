@@ -1,47 +1,100 @@
 # Dreamineering
 
-How do you [gain maximum leverage](https://mm.dreamineering.com/docs/business/business-principles/business-principles-leverage/) to optimise creation and distribution of value?
+How do you [gain maximum leverage](https://mm.dreamineering.com/docs/business/business-principles/business-principles-leverage/) to optimise the creation and distribution of value?
 
 - [A](https://github.com/dreamineering/stackmates/tree/main/ai)
 - [B](https://github.com/dreamineering/stackmates/tree/main/bc)
 - [C](https://github.com/dreamineering/stackmates/tree/main/connection)
 
+[What is valuable](https://mm.dreamineering.com/docs/value/)?
+
 ## Growth
 
-Drive growth with [experiments](https://mm.dreamineering.com/docs/grow/growth-experiments/).
+It takes a village to raise a child, it takes an ecosystem to raise a business.
 
-- Dreamineering: Pitch Growth Ideas
+- Dreamineering: Practice selling growth ideas
 - Better Practice: DeSci Health and Life Coaching Cafes
 - Stackmates: Tokenised Real Estate Development
 - Prettymint: AI & BC powered marketing Agency
-- Howzus: Brewery & Social
-- Blockchain Golf: Learn crypto through play
+- Howzus: Social app celebrating achievement through teamwork
+- Ambrose Crypto Golf: Learn together by sharing risk to play with crypto capital
+
+Drive growth with [experiments](https://mm.dreamineering.com/docs/grow/growth-experiments/).
 
 ## Business
 
 [Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business) via incorruptible systems of governance.
 
-| Protocols                                                                                                                        | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Tokenomics |
-| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --- | ---------- | ---------- |
-| [Identity](https://mm.dreamineering.com/docs/business/business-principles/web3-principles/web3-principle-decentralised-identity) |                                                                                                                              |     |            |            |
-| [DeFi](https://mm.dreamineering.com/docs/value/tokenomics/tokenomics-defi/defi-primitives/)                                      |                                                                                                                              |     |            |            |
-| [Games](https://mm.dreamineering.com/docs/grow/play-to-grow/)                                                                    |                                                                                                                              |     |            |            |
-| [DAOs](https://mm.dreamineering.com/docs/people/networks/network-states/)                                                        |                                                                                                                              |     |            |            |
-| [DeSci](https://mm.dreamineering.com/docs/science/platform-desci)                                                                |                                                                                                                              |     |            |            |
-| [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)                                                        |                                                                                                                              |     |            |            |
+| Protocols                                                                                                                        | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/) | [Blockchain](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/) | Tokenomics |
+| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- |
+| [Identity](https://mm.dreamineering.com/docs/business/business-principles/web3-principles/web3-principle-decentralised-identity) |                                                                                                                              |                                                                                         |                                                                                      |            |
+| [DeFi](https://mm.dreamineering.com/docs/value/tokenomics/tokenomics-defi/defi-primitives/)                                      |                                                                                                                              |                                                                                         |                                                                                      |            |
+| [Games](https://mm.dreamineering.com/docs/grow/play-to-grow/)                                                                    |                                                                                                                              |                                                                                         |                                                                                      |            |
+| [DAOs](https://mm.dreamineering.com/docs/people/networks/network-states/)                                                        |                                                                                                                              |                                                                                         |                                                                                      |            |
+| [DeSci](https://mm.dreamineering.com/docs/science/platform-desci)                                                                |                                                                                                                              |                                                                                         |                                                                                      |            |
+| [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)                                                        |                                                                                                                              |                                                                                         |                                                                                      |            |
 
-Protocols vs best tech vs impact?
+Any community is only as strong as it's [culture for onboarding](https://mm.dreamineering.com/docs/people/networks/culture/onboarding) newcomers.
+
+Any piece of software reflects the organisational communication structure that produced it - [Conway's Law](https://mm.dreamineering.com/docs/grow/decision-process/engineering-laws/#conways-law)
 
 ## Engineering
 
-[Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/) run the world. Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
+It is easier to edit or delete than to conceive and create when getting started. Mastery is deleting as much as possible to deliver more with less.
 
-- [Business Software](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
+[Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/) run the world.
+
+### Decisions
+
+Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
+
 - [Solution Stack](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/)
 - [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-stack-decisions/)
 - [AI LLMs](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/ai-llms/)
+- [Business Tools](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
 
-Conviction: All software is converging on games. It is easier to edit or delete than to conceive and create when getting started. Mastery is being able to delete as much as possible to achieve desired results.
+Conviction: Games push tech to creative limits. Playing games builds trust and loyalty. All software is converging on becoming a game.
+
+Conviction: Collecting and processing trusted proprietary data is where the value lies.
+
+### Blockchains
+
+Which blockchains support your **crypto enabled** ecosystem best?
+
+#### EVM
+
+How do you [differentiate value proposition](https://mm.dreamineering.com/docs/business/business-functions/revenue/sales/sales-pitch) of Etheruem L2s?
+
+- [ ] Ethereum
+  - [ ] Arbitrum
+  - [ ] Optimism
+  - [ ] zkSync
+- [ ] Polygon
+- [ ] Avalanche
+
+#### SVM / Other
+
+Best suited to DePIN? Why?
+
+- [ ] Solana
+- [ ] IoTex
+
+### Languages
+
+Power vs utility?
+
+1. Rust
+2. Typescript
+3. Python
+4. Solidity
+
+Rust goes deep and is difficult for the masses to grok.
+
+### Smart Contracts
+
+Standard and best practice patterns.
+
+What is the value of writing an open source smart contract anyone else can should copy as basis for their own protocol?
 
 ## Workbooks
 
