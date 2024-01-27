@@ -1,12 +1,12 @@
 # Dreamineering
 
-How do you [gain maximum leverage](https://mm.dreamineering.com/docs/business/business-principles/business-principles-leverage/) to optimise the creation and distribution of value?
+How do you [maximize leverage](https://mm.dreamineering.com/docs/business/business-principles/business-principles-leverage/) to optimise the [transformation and distribution](https://mm.dreamineering.com/docs/engineering/software-engineering/algorithms/routing-algorithm) of value?
 
-- [A](https://github.com/dreamineering/stackmates/tree/main/ai)
-- [B](https://github.com/dreamineering/stackmates/tree/main/bc)
-- [C](https://github.com/dreamineering/stackmates/tree/main/connection)
+- [A](https://github.com/dreamineering/stackmates/tree/main/ai): Artificial Intelligence
+- [B](https://github.com/dreamineering/stackmates/tree/main/bc) : Blockchain Strategy
+- [C](https://github.com/dreamineering/stackmates/tree/main/connection) : Human Connection
 
-[What is valuable](https://mm.dreamineering.com/docs/value/)?
+Where does [value](https://mm.dreamineering.com/docs/value/) lie?
 
 ## Growth
 
