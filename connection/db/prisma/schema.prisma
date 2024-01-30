@@ -73,6 +73,7 @@ model User {
 
   accounts                    Account[]
   sessions                    Session[]
+  contacts                    ContactPerson[]
     
 
   @@schema("public")
@@ -234,16 +235,16 @@ model CommonProblem {
   benchmarkSolutionPhases     Int?      @map("benchmark_solution_phases") @default(1)
   benchmarkSolutionCost       Decimal?  @map("benchmark_solution_cost") @default(0)
 
-  bestSolution                SolutionProtocol? @relation("BestSolution", fields: [best_solution_id], references: [id])
+  bestSolution                SolutionProtocol? @relation("BestSolution", fields: [bestSolutionId], references: [id])
   bestSolutionId              Int?      @map("best_solution_id")
 
   importSystem                String?   @map("import_system") @db.VarChar(255)    // name of system data imported from
   importSystemId              Int?      @map("import_system_id")                     // id in the imported system
   importSystemTitle           String?   @map("import_system_title")  @db.VarChar(255)    // term used in the imported system
 
-  solutions                   SolutionProtocol[] @relation("CommonProblem")
+  // solutions                   SolutionProtocol[] 
   
-  @@unique([category, name])
+  @@unique([category, problemTitle])
   @@map(name: "problems")
   @@schema("drmg")
 }
@@ -251,7 +252,7 @@ model CommonProblem {
 model SolutionProtocol {
   id                    Int       @id @default(autoincrement())
   
-  problem               CommonProblem   @relation("Problem", fields: [problem_id], references: [id])
+  problem               CommonProblem   @relation("BestSolution")
   problem_id            Int
   solution_desc         String    @db.Text
   
@@ -261,7 +262,6 @@ model SolutionProtocol {
   solution_phases       Int?  
   solution_cost         Decimal?  
 
-  // problems              CommonProblem[] @relation("BestSolution")
   milestones            SolutionMilestone[]
 
   @@map(name: "solution_protocols")
@@ -271,11 +271,11 @@ model SolutionProtocol {
 model SolutionMilestone {
   id                  Int       @id @default(autoincrement())
 
-  solution            SolutionProtocol @relation(fields: [solution_id], references: [id])
-  solution_id         Int
+  solution            SolutionProtocol @relation(fields: [solutionId], references: [id])
+  solutionId          Int                         @map("solution_id")
 
-  progress_date       DateTime @db.Date
-  progress_check      String?   @db.VarChar(255)
+  progressDate        DateTime @db.Date           @map("progress_date")
+  progressCheck       String?   @db.VarChar(255)  @map("progress_check")  // "on track", "behind", "ahead"
 
   @@map(name: "solution_protocol_milestones")
   @@schema("drmg")
@@ -400,20 +400,22 @@ model ContactPerson {
   mobile                    String?
   email                     String?
 
-  // social influence
-  social_influence_rank     Int?      @default(0)
-  social_youtube            String?   @db.VarChar(255)
-  social_instagram          String?   @db.VarChar(255)
-  social_facebook           String?   @db.VarChar(255)
-  social_x                  String?   @db.VarChar(255)
-  social_linkedin           String?   @db.VarChar(255)
-  social_tiktok             String?   @db.VarChar(255)
+  // objective  assessment
+  socialGoodwill            Int?      @default(0)   @map("social_goodwill")       // overall social goodwill trust, decsion making process integrity
+
+  // media
+  socialYoutube            String?   @db.VarChar(255) @map("social_youtube")
+  socialLinkedin           String?   @db.VarChar(255) @map("social_linkedin")
+  socialFacebook           String?   @db.VarChar(255) @map("social_facebook")
+  socialX                  String?   @db.VarChar(255) @map("social_x")
+  socialInstagram          String?   @db.VarChar(255) @map("social_instagram")
+  socialTiktok             String?   @db.VarChar(255) @map("social_tiktok")
 
   notes                     String?   @db.Text
   // conversations             String?   @db.Text
   // proof of identity?
 
-  user                      User?  @relation(fields: [user_id], references: [id])
+  user                      User?  @relation(fields: [userId], references: [id])
   userId                    String? @map("user_id") @unique
 
   interactions              ContactInteraction[]
@@ -631,54 +633,50 @@ model BusinessFunctionProcess {
   id                        Int @id @default(autoincrement())
   name                      String  @unique
   description               String? @db.Text
-  essential_ind             Int? @default(0)
+  essentialInd              Int? @default(0)  @map("essential_ind")        // 0 = no, 1 = yes  
 
-  mindsetMatch              String?             // required mindset - Deep Work, Creative, Process Driven, Unstructured
+  // Human vs AI Agent
+  mindsetMatch              String?           @map("mindset_match")        // required mindset - Deep Work, Creative, Process Driven, Unstructured
+  aiAgent                   String?           @map("ai_agent")             // best AI agent to do the job
+  aiAgentCapability         Int? @default(0)  @map("ai_agent_capability")  // 0-5 rating for success (needs quantifying rules)
 
-  aiAgent                   String?             // best AI agent to do the job
-  aiAgentCapability         Int? @default(0)    // 0-5 rating for success (needs quantifying rules)
+  // Business Reporting
+  businessFunction          BusinessFunction  @relation(fields: [businessFunctionId], references: [id])
+  businessFunctionId        Int               @map("business_function_id")
+  ledger                    AccountsLedger?   @relation(fields: [ledgerId], references: [id])
+  ledgerId                  Int?              @map("ledger_id")
+  industrySpecificInd       Int? @default(0)  @map("industry_specific_ind")  // 0 = no, 1 = yes
+  industry                  String? 
 
-  businessFunction          BusinessFunction @relation(fields: [business_function_id], references: [id])
-  businessFunctionId        Int
-  ledger                    AccountsLedger? @relation(fields: [ledger_id], references: [id])
-  ledgerId                  Int?
-
-  inputs                    String?       // What resources, information, or materials are required to start the process.
-  action_trigger            String?       // what triggers the action
-  action_schedule           String?       // daily, weekly, monthly, quarterly, yearly, etc.
+  // How to Trigger Activities / CRON jobs
+  activityTrigger           String?           @map("action_trigger")    // what events trigger action
+  activitySchedule          String?           @map("action_schedule")   // daily, weekly, monthly, quarterly, yearly, etc.
   
-  // Methods
-  process_steps             String?       // Each action or task that takes place within the process, often represented as a flowchart or diagram 
-  step_ownership_roles      String?       // Which roles are responsible for each step of the process
-  risks_and_controls        String?       // Any potential issues that could arise during the process, and how they are managed or mitigated
+  // Production Method
+  inputVariables            String?           @map("input_variables")       // What resources, information, or materials are required to start the process.
+  processMethod             String?           @map("process_method")        // Each action or task that takes place within the process, often represented as a flowchart or diagram 
+  methodRoles               String?           @map("method_roles")          // Which roles are responsible for each step of the process
+  risksAndControls          String?           @map("risks_and_controls")    // Any potential issues that could arise during the process, and how they are managed or mitigated
 
-  outputs                   String?       // What the process produces or achieves.
-  dependencies              String?       // Dependencies: Other processes that this process relies on or that rely on this process
-
-  // Targeted Industry
-  industry_specific_ind     Int? @default(0)
-  industry                  String?
-
-  // Meta
-  meta_status               String? @default("draft")   // "draft", "active", "retired"
-  meta_version              Int?    @default(0)         // The version number of the process map or model.
-  meta_changelog            String? @db.Text            // Records of changes made to the process, including what was changed, who changed it, and why it was changed.
-  meta_comments             String? @db.Text            // Any comments or notes about the process.
-  process_map_exists_ind    Int? @default(0)            // 0 = no, 1 = yes
-  process_map_rating        Int? @default(0)            // 0 - 5
-
-
-  // quality / flow control
-  // Primary KPI used to measure the effectiveness and efficiency of the process
+  desiredOutcomes           String?           @map("desired_outcomes")      // What the process produces or achieves.
+  dependentProcesses        String?           @map("dependent_processes")   // Dependencies: Other processes that this process relies on or that rely on this process
+  
   metrics                   BusinessFunctionMetric[]
   action_triggers           MetricResultBenchmark[]
 
-  organisationId            Int @map("organisation_id")
+  // Meta
+  metaStatus                String? @default("draft") @map("meta_status")             // "draft", "active", "retired"
+  metaVersion               Int?    @default(0)       @map("meta_version")            // The version number of the process map or model.
+  metaChangelog             String? @db.Text          @map("meta_changelog")          // Records of changes made to the process, including what was changed, who changed it, and why it was changed.
+  metaComments              String? @db.Text          @map("meta_comments")           // Any comments or notes about the process.
+  processMapExistsInd       Int? @default(0)          @map("process_map_exists_ind")  // 0 = no, 1 = yes
+  processCapability         Int? @default(0)          @map("process_capability")      // 0 - 5 relative strength towards critical mass / snowball effect
 
-  createdByUserId           String @map("created_by_user_id")
-  updatedByUserId           String @map("updated_by_user_id")
-  createdAt                 DateTime @map("created_at")  @default(now())
-  updatedAt                 DateTime @map("updated_at") @updatedAt
+  organisationId            Int                       @map("organisation_id")
+  createdByUserId           String                    @map("created_by_user_id")
+  updatedByUserId           String                    @map("updated_by_user_id")
+  createdAt                 DateTime @default(now())  @map("created_at")
+  updatedAt                 DateTime @updatedAt       @map("updated_at") 
 
   @@schema("drmg")
   @@map("business_function_procedures")

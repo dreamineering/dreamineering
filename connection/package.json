@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
+  "prisma": {
+    "schema": "db/prisma/schema.prisma"
+  },
   "private": true,
   "dependencies": {
     "@auth/drizzle-adapter": "^0.3.14",

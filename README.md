@@ -2,24 +2,24 @@
 
 How do you [maximize leverage](https://mm.dreamineering.com/docs/business/business-principles/business-principles-leverage/) to optimise the [transformation and distribution](https://mm.dreamineering.com/docs/engineering/software-engineering/algorithms/routing-algorithm) of value?
 
-- [A](https://github.com/dreamineering/stackmates/tree/main/ai): Artificial Intelligence
-- [B](https://github.com/dreamineering/stackmates/tree/main/bc) : Blockchain Strategy
-- [C](https://github.com/dreamineering/stackmates/tree/main/connection) : Human Connection
+- [A](https://github.com/dreamineering/dreamineering/tree/main/ai): Artificial Intelligence
+- [B](https://github.com/dreamineering/dreamineering/tree/main/bc) : Blockchain Strategy
+- [C](https://github.com/dreamineering/dreamineering/tree/main/connection) : Human Connection
 
 Where does [value](https://mm.dreamineering.com/docs/value/) lie?
 
 ## Growth
 
-It takes a village to raise a child, it takes an ecosystem to raise a business.
+Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/flow-dream/) and aligning intentions of [key stakeholders](https://mm.dreamineering.com/docs/people/human-nature/archetypes/) is the biggest challenge to [sparking growth](https://mm.dreamineering.com/docs/grow/growth-experiments/).
 
 - Dreamineering: Practice selling growth ideas
 - Better Practice: DeSci Health and Life Coaching Cafes
 - Stackmates: Tokenised Real Estate Development
 - Prettymint: AI & BC powered marketing Agency
 - Howzus: Social app celebrating achievement through teamwork
-- Ambrose Crypto Golf: Learn together by sharing risk to play with crypto capital
+- Crypto Golf: Learn together by sharing risk to play with crypto capital
 
-[Capturing the imagination](https://mm.dreamineering.com/docs/grow/process-flow/flow-dream/) and aligning intentions of [key stakeholders](https://mm.dreamineering.com/docs/people/human-nature/archetypes/) the biggest challenge to running [growth experiments](https://mm.dreamineering.com/docs/grow/growth-experiments/).
+It takes a village to raise a child, it takes an ecosystem to raise a business.
 
 ## Business
 
@@ -41,9 +41,11 @@ Any piece of software reflects the organisational communication structure that p
 
 ## Engineering
 
-The engineering is not hard once the true problem is identfied. It is easier to edit or delete than to conceive and create when getting started. Mastery is deleting as much as possible to deliver more with less.
+Engineering solutions is not hard once the true problem is identfied.
 
-[Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/) run the world.
+It is easier to edit or delete than to conceive and create when getting started. Mastery is deleting as much as possible to deliver more with less.
+
+- [Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/) run the world.
 
 ### Decisions
 
