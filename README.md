@@ -12,12 +12,12 @@ Where does [value](https://mm.dreamineering.com/docs/value/) lie?
 
 Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/flow-dream/) and aligning intentions of [key stakeholders](https://mm.dreamineering.com/docs/people/human-nature/archetypes/) is the biggest challenge to [sparking growth](https://mm.dreamineering.com/docs/grow/growth-experiments/).
 
-- Dreamineering: Practice selling growth ideas
-- Better Practice: DeSci Health and Life Coaching Cafes
-- Stackmates: Tokenised Real Estate Development
-- Prettymint: AI & BC powered marketing Agency
-- Howzus: Social app celebrating achievement through teamwork
-- Crypto Golf: Learn together by sharing risk to play with crypto capital
+- [Dreamineering](https://mm.dreamineering.com/docs/grow/growth-experiments/): Sell ideas that generate growth
+- [Better Practice](https://mm.dreamineering.com/docs/grow/growth-experiments/): Better practice, better decisions, better lives
+- [Stackmates](https://mm.dreamineering.com/docs/grow/growth-experiments/): Tokenised Real Estate Development
+- [Prettymint](https://mm.dreamineering.com/docs/grow/growth-experiments/): AI & BC powered marketing Agency
+- [Howzus](https://mm.dreamineering.com/docs/grow/growth-experiments/): Social app celebrating achievement through teamwork
+- [Crypto Golf](https://mm.dreamineering.com/docs/grow/growth-experiments/): Learn together by sharing risk to play with crypto capital
 
 It takes a village to raise a child, it takes an ecosystem to raise a business.
 
