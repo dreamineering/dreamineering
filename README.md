@@ -10,7 +10,7 @@ Where does [value](https://mm.dreamineering.com/docs/value/) lie?
 
 ## Growth
 
-Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/flow-dream/) and aligning intentions of [key stakeholders](https://mm.dreamineering.com/docs/people/human-nature/archetypes/) is the biggest challenge to [sparking growth](https://mm.dreamineering.com/docs/grow/growth-experiments/).
+[Play](https://mm.dreamineering.com/docs/grow) to learn, [experiment](https://mm.dreamineering.com/docs/grow/growth-experiments) to grow.
 
 - [Dreamineering](https://mm.dreamineering.com/docs/grow/growth-experiments/): Sell ideas that generate growth
 - [Better Practice](https://mm.dreamineering.com/docs/grow/growth-experiments/): Better practice, better decisions, better lives
@@ -19,11 +19,11 @@ Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/
 - [Howzus](https://mm.dreamineering.com/docs/grow/growth-experiments/): Social app celebrating achievement through teamwork
 - [Crypto Golf](https://mm.dreamineering.com/docs/grow/growth-experiments/): Learn together by sharing risk to play with crypto capital
 
-It takes a village to raise a child, it takes an ecosystem to raise a business.
+Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/flow-dream/) and aligning intentions of [key stakeholders](https://mm.dreamineering.com/docs/people/human-nature/archetypes/) is the biggest challenge to [sparking growth](https://mm.dreamineering.com/docs/grow/growth-experiments/).
 
 ## Business
 
-[Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business) via incorruptible systems of governance.
+It takes a village to raise a child, it takes an ecosystem to raise a business. [Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business) via incorruptible systems of governance.
 
 | Protocols                                                                                                                                            | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/) | [Blockchain](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/) | [Tokenomics](https://mm.dreamineering.com/docs/value/tokenomics/) |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
