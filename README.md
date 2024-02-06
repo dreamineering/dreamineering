@@ -23,6 +23,8 @@ Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/
 
 ## Business
 
+Build [products](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/) that sell themselves.
+
 It takes a village to raise a child, it takes an ecosystem to raise a business. [Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business) via incorruptible systems of governance.
 
 | Protocols                                                                                                                                            | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/) | [Blockchain](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/) | [Tokenomics](https://mm.dreamineering.com/docs/value/tokenomics/) |
@@ -45,18 +47,14 @@ Engineering solutions is not hard once the true problem is identfied.
 
 It is easier to edit or delete than to conceive and create when getting started. Mastery is deleting as much as possible to deliver more with less.
 
-- [Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/) run the world.
+Evolve systems to take better decisions.
 
-### Decisions
-
-Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
-
+- [Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/)
 - [Tech Stack](https://mm.dreamineering.com/docs/engineering/tech-stack/)
-- [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-stack-decisions/)
-- [AI LLMs](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/ai-llms/)
-- [Business Tools](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
+- [Artificial Intelligence](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/)
+- [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-engineering)
 
-[Convictions](https://mm.dreamineering.com/docs/grow/decision-process/decision-perspective/big-picture-convictions)
+[Decisions](https://mm.dreamineering.com/docs/grow/decision-process)
 
 - Games push tech to creative limits. Playing games builds trust and loyalty. All software is converging on becoming a game.
 - Collecting and processing trusted proprietary data is where the value lies.
