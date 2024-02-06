@@ -49,9 +49,9 @@ It is easier to edit or delete than to conceive and create when getting started.
 
 ### Decisions
 
-Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
+Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/tech-stack/tech-stack-decisions/) to evaluation best fit option to create tech stacks the meet demands of various industries and business models.
 
-- [Solution Stack](https://mm.dreamineering.com/docs/engineering/software-engineering/tech-stack/)
+- [Tech Stack](https://mm.dreamineering.com/docs/engineering/tech-stack/)
 - [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-stack-decisions/)
 - [AI LLMs](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/ai-llms/)
 - [Business Tools](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/)
@@ -65,7 +65,7 @@ Evolve a [decision checklist](https://mm.dreamineering.com/docs/engineering/soft
 
 ### Blockchains
 
-Which blockchains support your **crypto enabled** ecosystem best?
+Which blockchains support **crypto enabled** ecosystem of business models best?
 
 #### EVM
 
@@ -75,15 +75,21 @@ How do you [differentiate value proposition](https://mm.dreamineering.com/docs/b
   - [ ] Arbitrum
   - [ ] Optimism
   - [ ] zkSync
-- [ ] Polygon
+  - [ ] zkPolygon
 - [ ] Avalanche
 
 #### SVM / Other
 
-Best suited to DePIN? Why?
+Which chains are best suited to DePIN? Why?
 
 - [ ] Solana
 - [ ] IoTex
+
+#### Trust-Minimized Services
+
+- [ ] Data Feeds
+- [ ] Functions
+- [ ] CCIP
 
 ### Languages
 
@@ -113,3 +119,4 @@ What is the value of writing an open source smart contract anyone else can shoul
 ## Diagrams
 
 - [Tech Stack](https://www.figma.com/file/SR3Xg7a8tElFPLoovsqwUO/technology-stack?type=whiteboard&node-id=260-1322&t=6q447RjvecYVn1fG-4)
+- [Ecosystem](https://www.figma.com/file/mjbfqZa4COueN5wwArjD3j/ecosystem-of-businesses?type=whiteboard&node-id=0%3A1&t=v24tOte00MgClr9a-1)
