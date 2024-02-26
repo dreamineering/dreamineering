@@ -1,65 +1,34 @@
 # Dreamineering
 
-How do you [maximize leverage](https://mm.dreamineering.com/docs/business/business-principles/business-principles-leverage/) to optimise the [transformation and distribution](https://mm.dreamineering.com/docs/engineering/software-engineering/algorithms/routing-algorithm) of value?
+Maximize leverage to optimise the transformation and distribution of value.
 
-- [A](https://github.com/dreamineering/dreamineering/tree/main/ai): Artificial Intelligence
-- [B](https://github.com/dreamineering/dreamineering/tree/main/bc) : Blockchain Strategy
-- [C](https://github.com/dreamineering/dreamineering/tree/main/connection) : Human Connection
+- [A](https://github.com/dreamineering/dreamineering/tree/main/ai)
+- [B](https://github.com/dreamineering/dreamineering/tree/main/bc)
+- [C](https://github.com/dreamineering/dreamineering/tree/main/connection)
 
-Where does [value](https://mm.dreamineering.com/docs/value/) lie?
+Sell to build, build to sell. Where does [true value](https://mm.dreamineering.com/docs/value/) lie?
 
-## Growth
+| Protocols | ZKP | AI  | Blockchain | Tokenomics |
+| --------- | --- | --- | ---------- | ---------- |
+| Identity  |     |     |            |            |
+| Goodwill  |     |     |            |            |
+| DeFi      |     |     |            |            |
+| Games     |     |     |            |            |
+| DAOs      |     |     |            |            |
+| DeSci     |     |     |            |            |
+| DePin     |     |     |            |            |
 
-[Play](https://mm.dreamineering.com/docs/grow) to learn, [experiment](https://mm.dreamineering.com/docs/grow/growth-experiments) to grow.
+Communities are the future of business. Any community is only as strong as it's protocols for onboarding newcomers.
 
-- [Dreamineering](https://mm.dreamineering.com/docs/grow/growth-experiments/): Sell ideas that generate growth
-- [Better Practice](https://mm.dreamineering.com/docs/grow/growth-experiments/): Better practice, better decisions, better lives
-- [Stackmates](https://mm.dreamineering.com/docs/grow/growth-experiments/): Tokenised Real Estate Development
-- [Prettymint](https://mm.dreamineering.com/docs/grow/growth-experiments/): AI & BC powered marketing Agency
-- [Howzus](https://mm.dreamineering.com/docs/grow/growth-experiments/): Social app celebrating achievement through teamwork
-- [Crypto Golf](https://mm.dreamineering.com/docs/grow/growth-experiments/): Learn together by sharing risk to play with crypto capital
+The best way to grow is through play.
 
-Capturing the [imagination](https://mm.dreamineering.com/docs/grow/process-flow/flow-dream/) and aligning intentions of [key stakeholders](https://mm.dreamineering.com/docs/people/human-nature/archetypes/) is the biggest challenge to [sparking growth](https://mm.dreamineering.com/docs/grow/growth-experiments/).
+## Tech Stack
 
-## Business
+Stand on the shoulders of giants to [build a platform](https://mm.dreamineering.com/docs/engineering/tech-stack/) for building solutions that solve real problems.
 
-Build [products](https://mm.dreamineering.com/docs/business/business-functions/revenue/product-mgt/) that sell themselves.
-
-It takes a village to raise a child, it takes an ecosystem to raise a business. [Communities](https://mm.dreamineering.com/docs/people/networks/culture/) are the future of [business](https://mm.dreamineering.com/docs/business) via incorruptible systems of governance.
-
-| Protocols                                                                                                                                            | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/ai-engineering/) | [Blockchain](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/) | [Tokenomics](https://mm.dreamineering.com/docs/value/tokenomics/) |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [Identity](https://mm.dreamineering.com/docs/business/business-principles/web3-principles/web3-principle-decentralised-identity)                     |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-| [Goodwill](https://mm.dreamineering.com/docs/business/business-functions/revenue/marketing/marketing-activites/marketing-activity-loyalty-programs/) |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-| [DeFi](https://mm.dreamineering.com/docs/value/tokenomics/tokenomics-defi/defi-primitives/)                                                          |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-| [Games](https://mm.dreamineering.com/docs/grow/play-to-grow/)                                                                                        |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-| [DAOs](https://mm.dreamineering.com/docs/people/networks/network-states/)                                                                            |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-| [DeSci](https://mm.dreamineering.com/docs/science/platform-desci)                                                                                    |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-| [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)                                                                            |                                                                                                                             |                                                                                         |                                                                                     |                                                                   |
-
-Any community is only as strong as it's [culture for onboarding](https://mm.dreamineering.com/docs/people/networks/culture/onboarding) newcomers.
-
-Any piece of software reflects the organisational communication structure that produced it - [Conway's Law](https://mm.dreamineering.com/docs/grow/decision-process/engineering-laws/#conways-law)
-
-## Engineering
-
-Engineering solutions is not hard once the true problem is identfied.
-
-It is easier to edit or delete than to conceive and create when getting started. Mastery is deleting as much as possible to deliver more with less.
-
-Evolve systems to take better decisions.
-
-- [Protocols](https://mm.dreamineering.com/docs/engineering/process-engineering/)
-- [Tech Stack](https://mm.dreamineering.com/docs/engineering/tech-stack/)
-- [Artificial Intelligence](https://mm.dreamineering.com/docs/engineering/ai-data-engineering/)
-- [Blockchains](https://mm.dreamineering.com/docs/engineering/blockchain-engineering)
-
-[Decisions](https://mm.dreamineering.com/docs/grow/decision-process)
-
-- Games push tech to creative limits. Playing games builds trust and loyalty. All software is converging on becoming a game.
-- Collecting and processing trusted proprietary data is where the value lies.
-- For a piece of information to be valuable it needs to be actionable.
-- Any protocol is only going to be valuable as it's [proprietary data](https://mm.dreamineering.com/docs/engineering/software-engineering/algorithms/routing-algorithm).
+- [AI Infrastructure](<(https://github.com/dreamineering/dreamineering/tree/main/ai)>)
+- [Blockchain Protocols](https://github.com/dreamineering/dreamineering/tree/main/bc)
+- [Connection Interface](https://github.com/dreamineering/dreamineering/tree/main/connection)
 
 ### Blockchains
 
@@ -67,7 +36,7 @@ Which blockchains support **crypto enabled** ecosystem of business models best?
 
 #### EVM
 
-How do you [differentiate value proposition](https://mm.dreamineering.com/docs/business/business-functions/revenue/sales/sales-pitch) of Etheruem L2s?
+How do you differentiate value proposition of Etheruem L2s?
 
 - [ ] Ethereum
   - [ ] Arbitrum

@@ -1,10 +1,5 @@
 # AI
 
-## Convictions
-
-- [The end of programming is near](https://mm.dreamineering.com/docs/value/wisdom/big-picture-convictions#software)
-- [AI is only as good as the data it learns from](https://mm.dreamineering.com/docs/engineering/data-engineering/).
-
 ## Intentions
 
 Perfect the art of insight.
@@ -15,8 +10,4 @@ Perfect the art of insight.
 4. Automate Workflows
 5. Trigger Onchain Functions
 
-## Tech
-
-Which LLMs? When? Why? Risk?
-
-- [mistral.ai](https://docs.mistral.ai/)
+[AI Data Platform](https://mm.dreamineering.com/docs/engineering/tech-stack/platform-tech-stack/ai-data-engineering/)

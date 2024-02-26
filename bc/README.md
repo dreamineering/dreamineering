@@ -40,7 +40,7 @@ Humans still live in a physical world, what is the easy to understand, **real wo
 - Success Journey
 - Infighting
 
-## Stack Boundaries
+## Decision Boundaries
 
 Wallet
 
@@ -58,8 +58,4 @@ Oracles
 - Chainlink
 - Pyth
 
-## Services
-
-### Automation
-
-[crontab.guru](https://crontab.guru/)
+Trust Minimized Services
