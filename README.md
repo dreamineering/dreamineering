@@ -2,9 +2,9 @@
 
 How does [value](https://mm.dreamineering.com/docs/decisions/) flow?
 
-| Innovation Vectors | ZKP | AI  | Blockchain | Incentives |
+| Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Incentives |
 | --------- | --- | --- | ---------- | ---------- |
-| Identity  |     |     |            |            |
+| [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-decentralised-identity)  |     |     |            |            |
 | Goodwill  |     |     |            |            |
 | DeFi      |     |     |            |            |
 | DAOs      |     |     |            |            |
