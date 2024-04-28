@@ -1,35 +1,27 @@
 # Dreamineering
 
-Sell to build, build to sell.
+How does [value](https://mm.dreamineering.com/docs/decisions/) flow?
 
 | Innovation Vectors | ZKP | AI  | Blockchain | Incentives |
 | --------- | --- | --- | ---------- | ---------- |
 | Identity  |     |     |            |            |
 | Goodwill  |     |     |            |            |
 | DeFi      |     |     |            |            |
-| Games     |     |     |            |            |
 | DAOs      |     |     |            |            |
 | DeSci     |     |     |            |            |
 | DePin     |     |     |            |            |
+| Games     |     |     |            |            |
 
-How does [value](https://mm.dreamineering.com/docs/value/) flow?
+- Communities are the future of business 
+- Communities are driven by culture
+- [Your culture is your moat](https://mm.dreamineering.com/docs/decisions/value-system/intangibles/value-memes/)
 
-- Communities are the future of business. 
-- Communities are culture driven.
-- Develop play to grow culture.
+## Business Engineering
 
-## Platform
+How will AI and blockchain change the [future of work](https://mm.dreamineering.com/docs/work/)?
 
-Stand on the shoulders of giants to innovate at the edges.
-
-- [A](https://github.com/dreamineering/dreamineering/tree/main/ai)rtificial Intelligence
-- [B](https://github.com/dreamineering/dreamineering/tree/main/bc)lockchain Integrity
-- [C](https://github.com/dreamineering/dreamineering/tree/main/connection)rypto Incentives
-
-[Platform Decisions](https://mm.dreamineering.com/docs/engineering/tech-stack/)
-
-## People
-
-The quality of your life is a reflection of the quality of the people you surround yourself with.
+- [A](https://mm.dreamineering.com/docs/ai)rtificial Intelligence
+- [B](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/)lockchain Integrity
+- [C](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/)rypto Incentives
 
 Play long term [games](https://mm.dreamineering.com/docs/games/) with long term [people](https://mm.dreamineering.com/docs/people)
