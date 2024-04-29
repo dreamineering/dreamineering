@@ -30,7 +30,7 @@ Play long term [games](https://mm.dreamineering.com/docs/games/) with long term 
 
 ## Tech Stack
 
-Product engineering
+Evolve a common library of evaluation questions and components to build either Traditional SaaS Apps, Decentralized Apps or AI Interfaces from the same monorepo.
 
 | Boundary | Selection |
 |---|--|
