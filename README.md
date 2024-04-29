@@ -1,26 +1,28 @@
 # Dreamineering
 
-How does [value](https://mm.dreamineering.com/docs/decisions/) flow through different [industries](https://mm.dreamineering.com/docs/work/industries/)? What opportunities exist to leverage [transformative tech](https://mm.dreamineering.com/docs/engineering/technology) to create more [effective business models](https://mm.dreamineering.com/docs/business/business-models/)?
+How does [value](https://mm.dreamineering.com/docs/decisions/) flow through different [industries](https://mm.dreamineering.com/docs/work/industries/)? 
 
 | Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Incentives |
 | --------- | --- | --- | ---------- | ---------- |
-| [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-decentralised-identity)  |     |     |            |            |
-| Goodwill  |     |     |            |            |
-| DeFi      |     |     |            |            |
-| [DAOs/Network States](https://mm.dreamineering.com/docs/people/networks/network-states/)      |     |     |            |            |
+| [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-decentralised-identity)  | CRITICAL    |     |            |            |
+| [Goodwill](https://mm.dreamineering.com/docs/business/cost-centres/commercial/marketing/)  |     |     |            |            |
+| [DeFi](https://mm.dreamineering.com/docs/crypto/investing/crypto-assets/)      |     |     |            |            |
+| [DAOs & Network States](https://mm.dreamineering.com/docs/people/networks/network-states/)      |     |     |            |            |
 | [DeSci](https://mm.dreamineering.com/docs/engineering/science/#desci)     |     |     |            |            |
 | [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)     |     |     |            |            |
 | [Games](https://mm.dreamineering.com/docs/games)     |     |     |            |            |
 
-Culture builds loyalty, loyalty creates liquidity.
+Explore opportunities to leverage [transformative tech](https://mm.dreamineering.com/docs/engineering/technology) to create more [effective business models](https://mm.dreamineering.com/docs/business/business-models/)?
 
 - Communities are the future of business 
 - Communities are driven by culture
 - [Your culture is your moat](https://mm.dreamineering.com/docs/decisions/value-system/intangibles/value-memes/)
 
+Culture builds loyalty, loyalty creates liquidity.
+
 ## Business Engineering
 
-How will AI and blockchain change the [future of work](https://mm.dreamineering.com/docs/work/)?
+[The future of work](https://mm.dreamineering.com/docs/work/)?
 
 - [A](https://mm.dreamineering.com/docs/ai)rtificial Intelligence
 - [B](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/)lockchain Integrity
