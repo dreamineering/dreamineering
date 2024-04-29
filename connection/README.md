@@ -1,87 +1,20 @@
 # Connection
 
-How will humans interface with technology to get things done?
-
-## Convictions
-
-Mass Onboarding to blockchain for the greater good requires real human connections.
-
-1. Loyalty is valuable
-2. Trust build loyalty
-
-## Marketing
-
-Games will form the glue that connect people to shape culture.
-
-- Tokenized loyalty
-- Proof of humanity
-- AI driven strategy
-
-[AI Marketing Agency](https://mm.dreamineering.com/docs/business/experiments/experiment-prettymint/)
-
-## Best Practice Examples
-
-Create a library of examples to establish patterns and contrast pros and cons of different architecture options.
-
-Vercel [Platform](https://github.com/vercel/platforms)
-
-### Nextjs Patterns
-
-- [T3 Apps](https://mm.dreamineering.com/docs/engineering/software/sdk/nextjs/#t3-apps)
-- [Shadcn Components](https://mm.dreamineering.com/docs/engineering/software/sdk/nextjs/nextjs-components/libraries/ui-components-shadcn)
-- [Convex & AI](https://mm.dreamineering.com/docs/engineering/software/sdk/server-dev/backend-convex)
-
-Maintain a reference to shadcn
+Use NX and Next.js to build multiple applications that drive human connection from a shared library of reusable components.
 
 ```bash
 npx nx serve shadcn-default --port 3001
 ```
 
-T3 & Nextjs 14 Data Access
-
-### RaaS / Eth Patterns
-
-Scaffold Eth for quick exploration of ideas.
-
 ```bash
 npx nx serve demo-scaffold-eth --port 3000
 ```
-
-### Mono / Solana Patterns
-
-- [ ] DePin Example
-
-## Business Experiments
-
-Create hackathon starting point with the assumption that every business/organisation/protocol requires
-
-Account Abstraction signup/login.
-
-1. Marketing Site(s)
-   - Tokenized Loyalty
-2. Domain Problem App
-   - [Prompt Interface](https://github.com/rauchg/next-ai-news)
-   - Mobile Interface (App Store Workaround?)
-
-Backend Interfaces
-
-1. AI / LLMs
-2. Onchain
-3. Traditional Offchain data
 
 Starter
 
 ```bash
 npx nx serve mates
 ```
-
-## UI/UX
-
-- [v0.dev](https://v0.dev/)
-
-## Web3
-
-[Blockchain Connections](https://updraft.cyfrin.io/courses/foundry/html-fund-me/summary)
 
 ## NX
 
