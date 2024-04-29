@@ -1,16 +1,16 @@
 # Dreamineering
 
-How does [value](https://mm.dreamineering.com/docs/decisions/) flow?
+How does [value](https://mm.dreamineering.com/docs/decisions/) flow through different [industries](https://mm.dreamineering.com/docs/work/industries/)? What opportunities exist to leverage [transformative tech](https://mm.dreamineering.com/docs/engineering/technology) to create more [effective business models](https://mm.dreamineering.com/docs/business/business-models/)?
 
 | Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Incentives |
 | --------- | --- | --- | ---------- | ---------- |
 | [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-decentralised-identity)  |     |     |            |            |
 | Goodwill  |     |     |            |            |
 | DeFi      |     |     |            |            |
-| DAOs      |     |     |            |            |
-| DeSci     |     |     |            |            |
-| DePin     |     |     |            |            |
-| Games     |     |     |            |            |
+| [DAOs/Network States](https://mm.dreamineering.com/docs/people/networks/network-states/)      |     |     |            |            |
+| [DeSci](https://mm.dreamineering.com/docs/engineering/science/#desci)     |     |     |            |            |
+| [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)     |     |     |            |            |
+| [Games](https://mm.dreamineering.com/docs/games)     |     |     |            |            |
 
 Culture builds loyalty, loyalty creates liquidity.
 
@@ -42,6 +42,7 @@ Evolve a common library of evaluation questions and components to build either T
 | Web3 UI Components | Scaffold Eth |
 | User Management/Account Abstraction | Clerk/Privy |
 | ORM | Drizzle |
+| Database | Supabase/Convex |
 | Email | React Email |
 | Content Management | Contentlayer |
 | File Upload | Uploadthing |
