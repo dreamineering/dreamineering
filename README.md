@@ -32,7 +32,16 @@ Play long term [games](https://mm.dreamineering.com/docs/games/) with long term 
 
 ## Tech Stack
 
-Evolve a common library of evaluation questions and components to build either Traditional SaaS Apps, Decentralized Apps or AI Interfaces from the same monorepo.
+Integrate a common library of components to rapidly evolve Traditional SaaS, Decentralized, or AI Interfaces from the same monorepo.
+
+- [Business Tools](https://mm.dreamineering.com/docs/business/business-software/)
+- Product Engineering
+- Platform Engineering
+- Protocol Engineering
+
+### Product Engineering
+
+Engineer interfaces that enable people to achieve desired outcomes.
 
 | Boundary | Selection |
 |---|--|
