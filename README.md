@@ -1,6 +1,6 @@
 # Dreamineering
 
-How does [value](https://mm.dreamineering.com/docs/decisions/) flow through different [industries](https://mm.dreamineering.com/docs/work/industries/)? 
+[Buidl](https://mm.dreamineering.com/docs/buidl) Collective Dreams.
 
 | Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Incentives |
 | --------- | --- | --- | ---------- | ---------- |
@@ -12,13 +12,13 @@ How does [value](https://mm.dreamineering.com/docs/decisions/) flow through diff
 | [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)     |     |     |            |            |
 | [Games](https://mm.dreamineering.com/docs/games)     |     |     |            |            |
 
-Explore opportunities to leverage [transformative tech](https://mm.dreamineering.com/docs/engineering/technology) to create more [effective business models](https://mm.dreamineering.com/docs/business/business-models/)?
+How can AI and Crypto combine to deliver systems that [help people to live more fulfilling lives](https://mm.dreamineering.com/docs/people/fulfillment/)?
 
 - Communities are the future of business 
 - Communities are driven by culture
 - [Your culture is your moat](https://mm.dreamineering.com/docs/decisions/value-system/intangibles/value-memes/)
 
-Culture builds loyalty, loyalty creates liquidity.
+Culture builds loyalty, loyalty ensures liquidity.
 
 ## Business Engineering
 
