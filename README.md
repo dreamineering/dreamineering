@@ -16,7 +16,7 @@ How can AI and Crypto combine to deliver systems that [help people to live more 
 
 - Communities are the future of business 
 - Communities are driven by culture
-- [Your culture is your moat](https://mm.dreamineering.com/docs/decisions/value-system/intangibles/value-memes/)
+- [Culture is the biggest moat in any economy](https://mm.dreamineering.com/docs/decisions/value-system/intangibles/value-memes/)
 
 Culture builds loyalty, loyalty ensures liquidity.
 
@@ -35,9 +35,10 @@ Play long term [games](https://mm.dreamineering.com/docs/games/) with long term 
 Integrate a common library of components to rapidly evolve Traditional SaaS, Decentralized, or AI Interfaces from the same monorepo.
 
 - [Business Tools](https://mm.dreamineering.com/docs/business/business-software/)
-- Product Engineering
-- Platform Engineering
-- Protocol Engineering
+- [AI Engineering](https://mm.dreamineering.com/docs/ai)
+- [Product Engineering](https://mm.dreamineering.com/docs/engineering/software-stack/products/)
+- [Platform Engineering](https://mm.dreamineering.com/docs/engineering/software-stack/platform/)
+- [Protocol Engineering](https://mm.dreamineering.com/docs/engineering/software-stack/onchain-protocols/)
 
 ### Product Engineering
 
@@ -45,7 +46,7 @@ Engineer interfaces that enable people to achieve desired outcomes.
 
 | Boundary | Selection |
 |---|--|
-| Build |[NX](https://nx.dev/) |
+| Build |[nx.dev](https://nx.dev/concepts/mental-model) |
 | Language | Typescript |
 | Framework | Next.js |
 | Styling | Tailwind CSS |
