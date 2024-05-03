@@ -47,7 +47,7 @@ Engineer interfaces that enable people to achieve desired outcomes.
 | Boundary | Selection |
 |---|--|
 | [Build](https://mm.dreamineering.com/docs/engineering/software-stack/developer-tools/monorepo-build-tools/) |[nx.dev](https://nx.dev/concepts/mental-model) |
-| [Languages])(https://mm.dreamineering.com/docs/work/engineering-roles/capability-coder/software-languages/) | Typescript, Python, Rust, Move  |
+| [Languages](https://mm.dreamineering.com/docs/work/engineering-roles/capability-coder/software-languages/) | Typescript, Python, Rust, Move  |
 | Framework | Next.js |
 | Styling | Tailwind CSS |
 | UI Components | shadcn/ui |
