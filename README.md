@@ -52,7 +52,7 @@ Engineer interfaces that enable people to achieve desired outcomes.
 | Styling | Tailwind CSS |
 | UI Components | shadcn/ui |
 | Web3 UI Components | Scaffold Eth |
-| User Management/Account Abstraction | Clerk/Privy |
+| [Auth/Account](https://mm.dreamineering.com/docs/engineering/software-stack/platform/identity-security/) | Clerk/Privy |
 | ORM | Drizzle |
 | Database | Supabase/Convex |
 | Email | React Email |
