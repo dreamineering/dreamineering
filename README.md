@@ -46,8 +46,8 @@ Engineer interfaces that enable people to achieve desired outcomes.
 
 | Boundary | Selection |
 |---|--|
-| Build |[nx.dev](https://nx.dev/concepts/mental-model) |
-| Language | Typescript |
+| [Build](https://mm.dreamineering.com/docs/engineering/software-stack/developer-tools/monorepo-build-tools/) |[nx.dev](https://nx.dev/concepts/mental-model) |
+| [Languages])(https://mm.dreamineering.com/docs/work/engineering-roles/capability-coder/software-languages/) | Typescript, Python, Rust, Move  |
 | Framework | Next.js |
 | Styling | Tailwind CSS |
 | UI Components | shadcn/ui |
@@ -59,5 +59,7 @@ Engineer interfaces that enable people to achieve desired outcomes.
 | Content Management | Contentlayer |
 | File Upload | Uploadthing |
 | Payment | Stripe |
+| [Blockchain](https://mm.dreamineering.com/docs/engineering/software-stack/onchain-protocols/blockchain-stack-decisions/) | EVM, SVM, Move |
+| [Interop Services](https://mm.dreamineering.com/docs/crypto/investing/crypto-assets/tokens-interop-services/) |  |
 
 
