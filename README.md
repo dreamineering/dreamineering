@@ -2,10 +2,10 @@
 
 [Buidl](https://mm.dreamineering.com/docs/buidl) Collective Dreams.
 
-| Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | AI  | Blockchain | Incentives |
+| Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/ai)  | [Blockchain](https://mm.dreamineering.com/docs/crypto/web3-principles) | [Incentives](https://mm.dreamineering.com/docs/crypto) |
 | --------- | --- | --- | ---------- | ---------- |
-| [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-decentralised-identity)  | CRITICAL    |     |            |            |
-| [Goodwill](https://mm.dreamineering.com/docs/business/cost-centres/commercial/marketing/)  |     |     |            |            |
+| [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-identity)  | CRITICAL    |     |            |            |
+| [Loyalty](https://mm.dreamineering.com/docs/business/cost-centres/commercial/marketing/)  |     |     |            |            |
 | [DeFi](https://mm.dreamineering.com/docs/crypto/investing/crypto-assets/)      |     |     |            |            |
 | [DAOs & Network States](https://mm.dreamineering.com/docs/people/networks/network-states/)      |     |     |            |            |
 | [DeSci](https://mm.dreamineering.com/docs/engineering/science/#desci)     |     |     |            |            |
