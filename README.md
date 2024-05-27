@@ -7,7 +7,7 @@
 | [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-identity)  | CRITICAL    |     |            |            |
 | [Loyalty](https://mm.dreamineering.com/docs/business/cost-centres/value-exchange/marketing/)  |     |     |            |            |
 | [DeFi](https://mm.dreamineering.com/docs/crypto/investing/crypto-assets/)      |     |     |            |            |
-| [DAOs](https://mm.dreamineering.com/docs/people/networks/network-states/)      |     |     |            |            |
+| [DAOs](https://mm.dreamineering.com/docs/networks/)      |     |     |            |            |
 | [DeSci](https://mm.dreamineering.com/docs/engineering/science/#desci)     |     |     |            |            |
 | [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/)     |     |     |            |            |
 | [Games](https://mm.dreamineering.com/docs/games)     |     |     |            |            |
