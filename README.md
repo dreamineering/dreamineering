@@ -2,7 +2,7 @@
 
 [Buidl](https://mm.dreamineering.com/docs/buidl) Collective Dreams.
 
-| Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/ai)  | [Blockchain](https://mm.dreamineering.com/docs/crypto/web3-principles) | [Incentives](https://mm.dreamineering.com/docs/crypto) |
+| Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/ai)  | [Blockchain](https://mm.dreamineering.com/docs/crypto/web3-principles) | [Incentives](https://mm.dreamineering.com/docs/crypto) |
 | --------- | --- | --- | ---------- | ---------- |
 | [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-identity)  | CRITICAL    |     |            |            |
 | [Loyalty](https://mm.dreamineering.com/docs/business/cost-centres/value-exchange/marketing/)  |     |     |            |            |
