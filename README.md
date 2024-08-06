@@ -8,6 +8,8 @@ Engineer systems that evolve the value of being human in the loop.
 
 ## Core Principles
 
+All code can be copied or forked, but you cannot fork culture nor the land and buildings that form a culture's roots. 
+
 1. **Engineer-to-Entrepreneur**: Bridging the gap between technical expertise and business acumen.
 2. **AI-Driven Marketing**: Leveraging AI for targeted, customized marketing campaigns.
 3. **Crypto-Powered Incentives**: Using blockchain and cryptocurrencies to align stakeholder interests.
@@ -25,7 +27,7 @@ Engineer systems that evolve the value of being human in the loop.
 1. **Innovative Fundraising**: Utilize crypto strategies to streamline capital raising
 2. **Effective Resource Allocation**: AI-automation of procedural tasks to focus on human centred design
 3. **Customer Loyalty**: Leverage engagement insights to deliver real value that improves retention
-5. **Autonomous Organizations**: Implement DAOs for decentralized governance
+5. **Autonomous Organizations**: Implement DAOs to evolve decision making systems so that the best ideas win
 
 ## Platform Engineering
 
