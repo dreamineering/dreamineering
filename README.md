@@ -1,107 +1,48 @@
 # Dreamineering
 
-[Buidl](https://mm.dreamineering.com/docs/buidl) Collective Dreams.
+Dreams are born twice: in mind, then reality. Craft shared visions that ignite purpose, fuelling collective intent. Together, engineer a reality where team triumphs eclipse individual pursuits, yielding greater real-world value.
 
-How can AI and Crypto combine to deliver systems that [help people to live more fulfilling lives](https://mm.dreamineering.com/docs/people/fulfillment/)?
+## Vision
 
-## Innovation Matrix
+Engineer systems that evolve the value of being human in the loop.
 
-Technologies that are closing a positive feedback loop on autonomous innovation across core functions that influence progress. 
+## Core Principles
 
-| Innovation Vectors | [ZKP](https://mm.dreamineering.com/docs/engineering/blockchain-architecture/blockchain-concepts/cryptography/zero-knowledge) | [AI](https://mm.dreamineering.com/docs/ai)  | [BC](https://mm.dreamineering.com/docs/crypto/web3-principles) | [CRYPTO](https://mm.dreamineering.com/docs/crypto) |
-| :------- | :-: | :-: | :-: | :-: |
-| [Identity](https://mm.dreamineering.com/docs/crypto/web3-principles/web3-principle-identity) - Being | CRITICAL    |  -   |            |            |
-| [Loyalty](https://mm.dreamineering.com/docs/business/cost-centres/value-exchange/marketing/) - Marketing |     |     |            |            |
-| [DeFi](https://mm.dreamineering.com/docs/crypto/investing/crypto-assets/) - Finance     |     |     |            |            |
-| [DAOs](https://mm.dreamineering.com/docs/networks/) - Governance     |     |     |            |            |
-| [DeSci](https://mm.dreamineering.com/docs/engineering/science/#desci) - Science     |     |     |            |            |
-| [DePin](https://mm.dreamineering.com/docs/engineering/depin-engineering/) - Infrastructure    |     |     |            |            |
-| [Games](https://mm.dreamineering.com/docs/games) - Glue    |     |     |            |            |
-
-
-
-### ZKP
-
-Zero Knowledge Proofs for privacy and scaling integrity
-
-- Self Soveriegn Identity
-- Proof of Personhood
-- Self custody of key records
-
-### AI
-
-AI automation of workflows allowing capability of teams to focus on higher value problems.
-
-- Flow Engineering
-- Future of Work
-
-### BC
-
-Blockchain integrity to build trust in predictable actions through verfiable truth.
-
-- Internet of Blockchains
-- Experimental Innovation vs Focused Leadership
-
-### Crypto
-
-Coordination through incentive design.
-
-- Memes for culture
-- Governance for thinkers
-- Tokens for the ecosystem
-- NFTs for assets
-
-## Culture
-
-Culture builds loyalty, loyalty builds liquidity, liquidity fuels innovation.
-
-- [Culture is the greatest value lock in any economy](https://mm.dreamineering.com/docs/decisions/value-system/intangibles/value-memes/)
-- Communities are driven by culture
-- Communities are the future of business
-- The games we invest in shape our culture most
+1. **Engineer-to-Entrepreneur**: Bridging the gap between technical expertise and business acumen.
+2. **AI-Driven Marketing**: Leveraging AI for targeted, customized marketing campaigns.
+3. **Crypto-Powered Incentives**: Using blockchain and cryptocurrencies to align stakeholder interests.
+4. **Community-Centric Approach**: Building loyal customer bases that evolve into active salesforces.
 
 ## Business Engineering
 
-[The future of work](https://mm.dreamineering.com/docs/work/)?
+- **A**rtificial Intelligence: Automating workflows to focus on high-value problems
+- **B**lockchain Integrity: Building trust through verifiable truth
+- **C**rypto Incentives: Coordinating efforts through thoughtful token design
+- **D**ePIN: Decentralized Physical Infrastructure Networks
 
-- [A](https://mm.dreamineering.com/docs/ai)rtificial Intelligence
-- [B](https://mm.dreamineering.com/docs/engineering/blockchain-engineering/)lockchain Integrity
-- [C](https://mm.dreamineering.com/docs/crypto)rypto Incentives
+## Growth
 
-Play long term [games](https://mm.dreamineering.com/docs/games/) with long term [people](https://mm.dreamineering.com/docs/people)
+1. **Innovative Fundraising**: Utilize crypto strategies to streamline capital raising
+2. **Effective Resource Allocation**: AI-automation of procedural tasks to focus on human centred design
+3. **Customer Loyalty**: Leverage engagement insights to deliver real value that improves retention
+5. **Autonomous Organizations**: Implement DAOs for decentralized governance
 
-### Process
+## Platform Engineering
 
-Integrate a common library of components to rapidly evolve Traditional SaaS, Decentralized, or AI Interfaces from the same monorepo.
+Engineer a platform to build and deliver better products with a clear point of difference faster.
 
-- [AI Engineering](https://mm.dreamineering.com/docs/ai/role-ai-engineer/)
-- [Product Engineering](https://mm.dreamineering.com/docs/engineering/roles/role-product-engineer/)
-- [Protocol Engineering](https://mm.dreamineering.com/docs/engineering/roles/roadmap-protocol-engineer)
-- [Platform Engineering](https://mm.dreamineering.com/docs/engineering/roles/roadmap-platform-engineer)
+- Leverage potential of AI Agents
+- Capture proprietary data
+- Build what matters
+- Purchase intelligently
+- Plan blockchain strategy
 
-### Platform
+## Get Involved
 
-Buy or build? [Decisions for platform engineers](https://mm.dreamineering.com/docs/engineering/software-stack/decisions/) to enable product engineers to deliver value to application users.
+Engineer third-spaces to create collisions that inspire action that drives your community forward using digital mycelium. 
 
-| Decision | Selection |
-|---|--|
-| [Build](https://mm.dreamineering.com/docs/engineering/software-stack/developer-tools/monorepo-build-tools/) |[nx.dev](https://nx.dev/concepts/mental-model) |
-| [Languages](https://mm.dreamineering.com/docs/work/engineering-roles/capability-coder/software-languages/) | Typescript, Python, Rust, Move  |
-| [Framework](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Next.js |
-| [Styling](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Tailwind CSS |
-| [UI Components](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | shadcn/ui |
-| [Web3 UI Components](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Scaffold Eth |
-| [Auth/Account](https://mm.dreamineering.com/docs/engineering/software-stack/platform/identity-security/) | Clerk/Privy |
-| [ORM](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Drizzle |
-| [Database](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Supabase/Convex |
-| [Email](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | React Email |
-| [Content Mgt](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Contentlayer |
-| [File Upload](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Uploadthing |
-| [Payment](https://mm.dreamineering.com/docs/engineering/software-stack/products/) | Stripe |
-| [Blockchain](https://mm.dreamineering.com/docs/engineering/software-stack/onchain-protocols/blockchain-stack-decisions/) | EVM, SVM, Move |
-| [Blockchain Interop](https://mm.dreamineering.com/docs/crypto/investing/crypto-assets/tokens-interop-services/) |  |
+Remember: "Culture builds loyalty, loyalty builds liquidity, liquidity fuels innovation."
 
-What are the best software tools to leverage to gain 1000x increase on valuable outcomes?
+Dreams Engineer Reality! 🚀
 
-[Business Tools](https://mm.dreamineering.com/docs/business/business-software/)
-
+[mm.dreamineering.com](https://mm.dreamineering.com/)
