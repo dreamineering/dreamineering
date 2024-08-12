@@ -21,7 +21,7 @@ All code can be copied or forked, but you cannot fork culture nor the land and b
 
 ## Business Engineering
 
-Engineer a platform to drive the innovation of protocols that enable people to align in realizing their full potential.
+Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full potential.
 
 - **A**rtificial Intelligence: Automating workflows to focus on high-value problems
 - **B**lockchain Integrity: Building trust through verifiable truth
