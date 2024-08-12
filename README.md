@@ -2,7 +2,11 @@
 
 Dreams are born twice: in mind, then reality. Craft shared visions that ignite purpose, fuelling collective intent. Together, engineer a reality where team triumphs eclipse individual pursuits, yielding greater real-world value.
 
-## Vision
+## Belief
+
+Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/). The games we choose to invest our attention in form our strongest cultural bonds.
+
+## Purpose
 
 Engineer systems that evolve the value of being human in the loop.
 
@@ -16,6 +20,8 @@ All code can be copied or forked, but you cannot fork culture nor the land and b
 4. **Community-Centric Approach**: Building loyal customer bases that evolve into active salesforces.
 
 ## Business Engineering
+
+Engineer a platform to drive the innovation of protocols that enable people to align in realizing their full potential.
 
 - **A**rtificial Intelligence: Automating workflows to focus on high-value problems
 - **B**lockchain Integrity: Building trust through verifiable truth
