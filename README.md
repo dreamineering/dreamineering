@@ -1,6 +1,6 @@
 # Dreamineering
 
-Dreams are born twice: in mind, then reality. Craft shared visions that ignite purpose, fuelling collective intent. Together, engineer a reality where team triumphs eclipse individual pursuits, yielding greater real-world value.
+Dreams are born twice: first in the mind and then reality. 
 
 ## Belief
 
