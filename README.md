@@ -37,6 +37,8 @@ Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the i
 
 ## Business Engineering
 
+Innovate at the edges with the smallest fully functional team that has maximum coherence.
+
 - Leverage potential of AI Agents
 - Capture proprietary data
 - Build what matters
