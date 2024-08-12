@@ -19,15 +19,6 @@ All code can be copied or forked, but you cannot fork culture nor the land and b
 3. **Crypto-Powered Incentives**: Using blockchain and cryptocurrencies to align stakeholder interests.
 4. **Community-Centric Approach**: Building loyal customer bases that evolve into active salesforces.
 
-## Business Engineering
-
-Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full potential.
-
-- **A**rtificial Intelligence: Automating workflows to focus on high-value problems
-- **B**lockchain Integrity: Building trust through verifiable truth
-- **C**rypto Incentives: Coordinating efforts through thoughtful token design
-- **D**ePIN: Decentralized Physical Infrastructure Networks
-
 ## Growth
 
 1. **Innovative Fundraising**: Utilize crypto strategies to streamline capital raising
@@ -37,13 +28,20 @@ Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the i
 
 ## Platform Engineering
 
-Engineer a platform to build and deliver better products with a clear point of difference faster.
+Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full potential.
+
+- **A**rtificial Intelligence: Automating workflows to focus on high-value problems
+- **B**lockchain Integrity: Building trust through verifiable truth
+- **C**rypto Incentives: Coordinating efforts through thoughtful token design
+- **D**ePIN: Decentralized Physical Infrastructure Networks
+
+## Business Engineering
 
 - Leverage potential of AI Agents
 - Capture proprietary data
 - Build what matters
-- Purchase intelligently
-- Plan blockchain strategy
+- Personalize sales
+- Own the vertical
 
 ## Get Involved
 
