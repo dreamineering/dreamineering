@@ -28,7 +28,7 @@ All code can be copied or forked, but you cannot fork culture nor the land and b
 
 ## Platform Engineering
 
-Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full potential.
+Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full [potential](https://mm.dreamineering.com/docs/progress/potential).
 
 - **A**rtificial Intelligence: Automating workflows to focus on high-value problems
 - **B**lockchain Integrity: Building trust through verifiable truth
@@ -37,7 +37,7 @@ Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the i
 
 ## Business Engineering
 
-Innovate at the edges with the smallest fully functional team that has maximum coherence.
+Innovate at the edges with the [smallest fully functional team](https://mm.dreamineering.com/docs/industries/work-roles/) that has maximum coherence.
 
 - Leverage potential of AI Agents
 - Capture proprietary data
@@ -47,10 +47,10 @@ Innovate at the edges with the smallest fully functional team that has maximum c
 
 ## Get Involved
 
-Engineer third-spaces to create collisions that inspire action that drives your community forward using digital mycelium. 
+[Engineer spaces that encourage creative collisions](https://mm.dreamineering.com/docs/startups/experiment-better-practice) that inspire action to drive society forward on a bedrock of digital mycelium. 
 
-Remember: "Culture builds loyalty, loyalty builds liquidity, liquidity fuels innovation."
+Culture builds loyalty, loyalty builds liquidity of ideas and capital that fuels innovation.
 
-Dreams Engineer Reality! 🚀
+Dreams engineer our reality! 🚀 Invest your energy imagining better dreams.
 
 [mm.dreamineering.com](https://mm.dreamineering.com/)
