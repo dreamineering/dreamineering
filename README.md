@@ -28,12 +28,12 @@ All code can be copied or forked, but you cannot fork culture nor the land and b
 
 ## Platform Engineering
 
-Engineer a [platform](https://mm.dreamineering.com/docs/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full [potential](https://mm.dreamineering.com/docs/progress/potential).
+Engineer a [platform](https://mm.dreamineering.com/docs/progress/platform) to drive the innovation of [protocols](https://mm.dreamineering.com/docs/progress/protocols/) that align [people](https://mm.dreamineering.com/docs/people) in realizing their full [potential](https://mm.dreamineering.com/docs/progress/potential).
 
-- **A**rtificial Intelligence: Automating workflows to focus on high-value problems
-- **B**lockchain Integrity: Building trust through verifiable truth
-- **C**rypto Incentives: Coordinating efforts through thoughtful token design
-- **D**ePIN: Decentralized Physical Infrastructure Networks
+- [**A**rtificial Intelligence](https://mm.dreamineering.com/docs/software/platform-engineering/ai): Automating workflows to focus on high-value problems
+- [**B**lockchain Integrity](https://mm.dreamineering.com/docs/software/platform-engineering/blockchain): Build trust through verifiable truth
+- [**C**rypto Incentives](https://mm.dreamineering.com/docs/progress/products/incentives): Coordinating efforts through thoughtful token design
+- [**D**ePIN](https://mm.dreamineering.com/docs/industries): Decentralized physical infrastructure networks connect intentions to actions that create real world value
 
 ## Business Engineering
 
