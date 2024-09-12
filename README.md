@@ -31,17 +31,28 @@ Innovate at the edges to deliver the most by using the least.
 - Personalize sales
 - Own the vertical
 
+## Product Engineering
+
+Strengthen real world connections by providing value.
+
+- [Next](https://github.com/dreamineering/dreamineering/tree/main/connection)
+- Shadcn / Tailwind
+- Drizzle ORM
+- Convex / Supabase (other)
+
 ## Platform Engineering
 
-- [**A**rtificial Intelligence](https://mm.dreamineering.com/docs/ai): Automating workflows to focus on high-value problems
-- [**B**lockchain Integrity](https://mm.dreamineering.com/docs/software/platform-engineering/blockchain): Build trust through verifiable truth
-- [**C**rypto Incentives](https://mm.dreamineering.com/docs/progress/products/incentives): Coordinating efforts through thoughtful token design
+Strengthen platform for engineering and delivering better products.
+
+- [**A**rtificial Intelligence](https://github.com/dreamineering/dreamineering/tree/main/ai): Automating workflows to focus on high-value problems
+- [**B**lockchain Integrity](https://github.com/dreamineering/dreamineering/tree/main/bc): Build trust through verifiable truth
+- [**C**rypto Incentives](https://github.com/dreamineering/dreamineering/tree/main/bc): Coordinating efforts through thoughtful token design
 - [**D**ePIN](https://mm.dreamineering.com/docs/industries): Orchestrate an interconnected network of real world assets to full potential
 
-## Play Long-term Games
+## Engineer Games
 
-Play long-term game with long-term people.
+Games shape culture, culture builds loyalty, loyalty deepens liquidity of ideas and capital that fuel innovation.
 
-Culture builds loyalty, loyalty builds liquidity of ideas and capital that fuels innovation.
+Play long-term games with long-term people.
 
 [mm.dreamineering.com](https://mm.dreamineering.com/)
