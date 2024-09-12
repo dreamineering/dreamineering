@@ -1,14 +1,9 @@
-[Solana Notes](https://mm.dreamineering.com/docs/technology/tech-infrastructure/blockchain-infrastructure/blockchains/solana/)
+# Solana
 
-```bash
-# Check the Solana binary is available.
-solana --version
+[Why Solana](https://mm.dreamineering.com/docs/software/platform-engineering/blockchain/protocols/solana)?
 
-# Check you can run a local validator (Run Ctrl+C to exit).
-# We’ll see what this does in this article.
-# Note this creates a "test-ledger" folder in your current directory.
-solana-test-validator
+## Getting Started
+
+[Dev Env Notes](https://mm.dreamineering.com/docs/software/platform-engineering/blockchain/onchain-dev-tools/svm-dev-tools)
 
 
-solana airdrop 3
-```
