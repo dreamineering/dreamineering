@@ -10,7 +10,7 @@ The games we choose to invest our attention in form our strongest cultural bonds
 
 ## Purpose
 
-Engineer systems that evolve the value of being human in the loop.
+Engineer systems that provide meaning to being human in the feedback loop.
 
 ## Core Principles
 
