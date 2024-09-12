@@ -33,12 +33,14 @@ Innovate at the edges to deliver the most by using the least.
 
 ## Product Engineering
 
-Strengthen real world connections by providing value.
+Software should prevent decision fatigue not add to it.
 
 - [Next](https://github.com/dreamineering/dreamineering/tree/main/connection)
 - Shadcn / Tailwind
 - Drizzle ORM
 - Convex / Supabase (other)
+
+Build software that strengthens real world connections by providing value.
 
 ## Platform Engineering
 
