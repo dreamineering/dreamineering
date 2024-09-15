@@ -8,6 +8,8 @@ Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/) and 
 
 [Games](https://mm.dreamineering.com/docs/culture/games/) will provide the abstraction layer focuses attention to [coordinate intention](https://mm.dreamineering.com/docs/progress).
 
+Waiho kia patai ana, he kaha ui te kaha.
+
 ## Progress
 
 Use [first principles](/docs/progress/protocols/standards/process-engineering/) to build [trust](/docs/culture/social-glue/trusted-connections) while delivering value.
