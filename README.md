@@ -4,9 +4,9 @@ Dreams are born twice: first in the mind and then reality. The starting point of
 
 ## Belief
 
-Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/) and [the games we choose to play](https://mm.dreamineering.com/docs/culture/games/) form our strongest cultural bonds. Games will provide the abstraction layer focuses attention to [coordinate intention](https://mm.dreamineering.com/docs/progress).
+Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/) and the games we **choose to play** form our strongest cultural bonds. 
 
-
+[Games](https://mm.dreamineering.com/docs/culture/games/) will provide the abstraction layer focuses attention to [coordinate intention](https://mm.dreamineering.com/docs/progress).
 
 ## Progress
 
