@@ -1,12 +1,12 @@
 # Dreamineering
 
-Dreams are born twice: first in the mind and then reality. 
+Dreams are born twice: first in the mind and then reality. The starting point of all [human achievement](https://mm.dreamineering.com/docs/work) is desire.
 
 ## Belief
 
-Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/). 
+Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/) and [the games we choose to play](https://mm.dreamineering.com/docs/culture/games/) form our strongest cultural bonds. Games will provide the abstraction layer focuses attention to [coordinate intention](https://mm.dreamineering.com/docs/progress).
 
-The games we choose to invest our attention in form our strongest cultural bonds.
+
 
 ## Progress
 
