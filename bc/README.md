@@ -10,7 +10,15 @@ Given that blockchains compete for developer attention and that DX is crucial fo
 * Near
 * Etc
 
-Examples
+## Principles
+
+Protocol code must be open sourced and survive the test of time to instill belief in trustless protocols. 
+
+Good artists borrow, great artists steal.
+
+What layers provide protection against vampire attacks?
+
+## Examples
 
 * Proof of Identity
 * Micro-payments
