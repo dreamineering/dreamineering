@@ -12,7 +12,7 @@ Given that blockchains compete for developer attention and that DX is crucial fo
 
 ## Principles
 
-Protocol code must be open sourced and survive the test of time to instill belief in trustless protocols. 
+Protocol code must be open sourced and [survive the test of time](https://mm.dreamineering.com/docs/people/capabilities/capability-decision-making/control-system/decision-laws#lindys-effect) to instill collective belief in trustless protocols to make them valuable. 
 
 Good artists borrow, great artists steal.
 
