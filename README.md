@@ -30,7 +30,7 @@ Evolve [first principle based protocols](/docs/progress/protocols) to build [tru
 12. **Planning:** Dedicate time, size your bets and manage risks.
 13. **Reflection:** Evolve your collective intelligence.
 
-Culture is your moat.
+Culture is your biggest competitive advantage and moat.
 
 ## Business Engineering
 
