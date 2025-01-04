@@ -2,7 +2,7 @@
 
 Dreams are born twice: first in the mind and then reality. 
 
-The starting point of all (human?) [achievement](https://mm.dreamineering.com/docs/work) is desire.
+The starting point of all (human) [achievement](https://mm.dreamineering.com/docs/work) is desire.
 
 ## Belief
 
