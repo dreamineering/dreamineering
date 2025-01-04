@@ -34,30 +34,31 @@ If you can't picture success or define [value](/docs/value) how will you know yo
 
 ## Business Engineering
 
-[Innovate at the edges](https://mm.dreamineering.com/docs/startups/) to deliver the most by using the least.
+[Innovate at the edges](https://mm.dreamineering.com/docs/startups/) to deliver real world value.
 
-- Leverage potential of AI Agents
+- Strengthen Teamwork between Humans and Agents
 - Capture proprietary data
 - Build what matters
 - Personalize sales
-- Own the vertical
+- Evolve culture
+- Reinvent success
 
-## Product Engineering
+## Product
 
 Build software (agents) that strengthens real world connections by providing provable value.
 
 Software is free, manufacturing matters.
 
-## Platform Engineering
+## Platform
 
 Deeper data analsyis strengthens your platform for value distribution.
 
-- [**A**rtificial Intelligence](https://github.com/dreamineering/dreamineering/tree/main/ai): Automating workflows to focus on high-value problems
+- [**A**rtificial Intelligence](https://github.com/dreamineering/dreamineering/tree/main/ai): Agentic workforce
 - [**B**lockchain Integrity](https://github.com/dreamineering/dreamineering/tree/main/bc): Build trust through verifiable truth
-- [**C**rypto Incentives](https://github.com/dreamineering/dreamineering/tree/main/bc): Coordinating efforts through thoughtful token design
-- [**D**ePIN](https://mm.dreamineering.com/docs/technology/): Orchestrate an interconnected network of real world assets to full potential
+- [**C**rypto Incentives](https://github.com/dreamineering/dreamineering/tree/main/bc): Align intents, coordinate efforts through token design
+- [**D**ePIN](https://mm.dreamineering.com/docs/technology/): Orchestrate robots and real world assets.
 
-## Engineer Games
+## Games
 
 [Games shape culture](https://mm.dreamineering.com/docs/culture/), culture builds loyalty, loyalty deepens liquidity of ideas and capital that fuel innovation.
 
