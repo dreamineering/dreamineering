@@ -10,6 +10,8 @@ Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/) and 
 
 [Games](https://mm.dreamineering.com/docs/culture/games/) will provide the abstraction layer focuses attention to [coordinate intention](https://mm.dreamineering.com/docs/progress).
 
+Our lives become a product of the five people we (invest) spend the most time with. By 30 most people become plastic in their way of reasoning how the world works. Today's five year old can choose any agent based on zone of proximal development on any subject to be their educator, in two years time these 7 year olds the will better adapted to how the world operates than most of the population over the age of 30.
+
 Waiho kia patai ana, he kaha ui te kaha.
 
 ## Progress
