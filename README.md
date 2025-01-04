@@ -1,6 +1,8 @@
 # Dreamineering
 
-Dreams are born twice: first in the mind and then reality. The starting point of all [human achievement](https://mm.dreamineering.com/docs/work) is desire.
+Dreams are born twice: first in the mind and then reality. 
+
+The starting point of all (human?) [achievement](https://mm.dreamineering.com/docs/work) is desire.
 
 ## Belief
 
@@ -32,7 +34,7 @@ If you can't picture success or define [value](/docs/value) how will you know yo
 
 ## Business Engineering
 
-[Innovate at the edges](https://mm.dreamineering.com/docs/business/startups/) to deliver the most by using the least.
+[Innovate at the edges](https://mm.dreamineering.com/docs/startups/) to deliver the most by using the least.
 
 - Leverage potential of AI Agents
 - Capture proprietary data
@@ -42,21 +44,13 @@ If you can't picture success or define [value](/docs/value) how will you know yo
 
 ## Product Engineering
 
-Software should prevent [decision fatigue](https://mm.dreamineering.com/docs/software/decisions/) not add to it.
+Build software (agents) that strengthens real world connections by providing provable value.
 
-[Connection Layer:](https://github.com/dreamineering/dreamineering/tree/main/connection)
-- Next
-- Shadcn & Tailwind
-- Drizzle ORM
-- Convex / Supabase
-- NX Monorepo
-- Clean Architecture
-
-Build software that strengthens real world connections by providing value.
+Software is free, manufacturing matters.
 
 ## Platform Engineering
 
-Strengthen platform for engineering and delivering better products.
+Deeper data analsyis strengthens your platform for value distribution.
 
 - [**A**rtificial Intelligence](https://github.com/dreamineering/dreamineering/tree/main/ai): Automating workflows to focus on high-value problems
 - [**B**lockchain Integrity](https://github.com/dreamineering/dreamineering/tree/main/bc): Build trust through verifiable truth
