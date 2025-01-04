@@ -14,7 +14,7 @@ Waiho kia patai ana, he kaha ui te kaha.
 
 ## Progress
 
-Use [first principles](/docs/progress/protocols/standards/process-engineering/) to build [trust](/docs/culture/social-glue/trusted-connections) while delivering value.
+Evolve [first principle based protocols](/docs/progress/protocols) to build [trust](/docs/culture/social-glue/trusted-connections) while delivering value to ensure you are making meaningful progress.
 
 1. **Purpose:** Know why you are here.
 2. **Perspective:** Interpret reality through alternative eyes.
@@ -30,11 +30,11 @@ Use [first principles](/docs/progress/protocols/standards/process-engineering/) 
 12. **Planning:** Dedicate time, size your bets and manage risks.
 13. **Reflection:** Evolve your collective intelligence.
 
-If you can't picture success or define [value](/docs/value) how will you know you are on the right path?
+Culture is your moat.
 
 ## Business Engineering
 
-[Innovate at the edges](https://mm.dreamineering.com/docs/startups/) to deliver real world value.
+[Innovate at the edges](https://mm.dreamineering.com/docs/startups/) to establish [new standards](https://mm.dreamineering.com/docs/progress/protocols/standards/) for delivering provable real world value.
 
 - Strengthen Teamwork between Humans and Agents
 - Capture proprietary data
@@ -42,6 +42,8 @@ If you can't picture success or define [value](/docs/value) how will you know yo
 - Personalize sales
 - Evolve culture
 - Reinvent success
+
+If you are not using [the best tech](https://mm.dreamineering.com/docs/technology/) for the job, you are already paying for it.
 
 ## Product
 
