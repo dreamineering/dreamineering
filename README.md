@@ -2,7 +2,7 @@
 
 Dreams are born twice: first in the mind and then reality. ([hyperstition](https://mm.dreamineering.com/docs/progress/predictions))
 
-The starting point of all (human) [achievement](https://mm.dreamineering.com/docs/work) is desire.
+The starting point of all (human) [achievement](https://mm.dreamineering.com/docs/projects) is desire.
 
 ## Belief
 
@@ -10,9 +10,7 @@ Crypto is a [cultural movement](https://mm.dreamineering.com/docs/culture/) and 
 
 [Games](https://mm.dreamineering.com/docs/culture/games/) will provide the abstraction layer focuses attention to [coordinate intention](https://mm.dreamineering.com/docs/progress).
 
-Our lives become a product of the five people we (invest) spend the most time with. By 30 most people become plastic in their way of reasoning how the world works. Today's five year old can choose any agent based on zone of proximal development on any subject to be their educator, in two years time these 7 year olds the will better adapted to how the world operates than most of the population over the age of 30.
-
-Waiho kia patai ana, he kaha ui te kaha.
+Our lives become a product of the five people we (invest) spend the most time with. By 30 most people become plastic in their way of reasoning how the world works. Today's five year olds can choose any agent to be their educator, in two years time these crypto+ai native 7 year olds the will better adapted to how the world operates than almost the entier population over the age of 30. And yet they will still control vast majority of wealth and continue to prefer real life encounters over being slaves to their phones.
 
 ## Progress
 
@@ -29,14 +27,14 @@ Evolve [first principle based protocols](/docs/progress/protocols) to build [tru
 9. **Product:** Distribute solutions that create value.
 10. **Performance:** Manage expectations while staying on course.
 11. **Persuasion:** Influence others to join your journey.
-12. **Planning:** Dedicate time, size your bets and manage risks.
+12. **Priorities:** Dedicate time, size your bets and manage risks.
 13. **Reflection:** Evolve your collective intelligence.
 
 Culture is your biggest competitive advantage and moat.
 
 ## Business Engineering
 
-[Innovate at the edges](https://mm.dreamineering.com/docs/startups/) to establish [new standards](https://mm.dreamineering.com/docs/progress/protocols/standards/) for delivering provable real world value.
+[Innovate at the edges](https://mm.dreamineering.com/docs/projects/) to establish [new standards](https://mm.dreamineering.com/docs/progress/protocols/standards/) for delivering provable real world value.
 
 - Strengthen Teamwork between Humans and Agents
 - Capture proprietary data
@@ -46,12 +44,6 @@ Culture is your biggest competitive advantage and moat.
 - Reinvent success
 
 If you are not using [the best tech](https://mm.dreamineering.com/docs/technology/) for the job, you are already paying for it.
-
-## Product
-
-Build software (agents) that strengthens real world connections by providing provable value.
-
-Software is free, manufacturing matters.
 
 ## Platform
 
