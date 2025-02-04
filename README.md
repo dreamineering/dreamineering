@@ -1,6 +1,6 @@
 # Dreamineering
 
-Dreams are born twice: first in the mind and then reality. ([hyperstition](https://mm.dreamineering.com/docs/progress/predictions))
+Dreams are born twice: first in the mind and then reality.
 
 The starting point of all [achievement](https://mm.dreamineering.com/docs/ai) is desire.
 
@@ -49,15 +49,18 @@ If you are not using [the best tech](https://mm.dreamineering.com/docs/technolog
 
 Deeper data analsyis strengthens your platform for value distribution.
 
-- [**A**rtificial Intelligence](https://github.com/dreamineering/dreamineering/tree/main/ai): Agentic workforce
-- [**B**lockchain Integrity](https://github.com/dreamineering/dreamineering/tree/main/bc): Build trust through verifiable truth
-- [**C**rypto Incentives](https://github.com/dreamineering/dreamineering/tree/main/bc): Align intents, coordinate efforts through token design
-- [**D**ePIN](https://mm.dreamineering.com/docs/technology/): Orchestrate robots and real world assets.
+- [**A**rtificial Intelligence](https://mm.dreamineering.com/docs/ai): Agentic workforce
+- [**B**lockchain Integrity](https://mm.dreamineering.com/docs/technology/blockchain/): Build trust through verifiable truth
+- [**C**rypto Incentives](https://mm.dreamineering.com/docs/crypto/): Align intents, coordinate efforts through token design
+- [**D**ePIN](https://mm.dreamineering.com/docs/technology/depin/): Orchestrate robots and real world assets.
 
-## Games
+## Projects
 
-[Games shape culture](https://mm.dreamineering.com/docs/culture/), culture builds loyalty, loyalty deepens liquidity of ideas and capital that fuel innovation.
+Teams that play together stick together, culture builds loyalty, loyalty deepens liquidity of ideas and capital that fuel innovation.
 
-Play long-term games with long-term people.
+- [Playbook](https://mm.dreamineering.com/docs/projects)
+- [Tech Stack](https://mm.dreamineering.com/docs/projects/project-dreamineering/tech-dreamineering-monorepo)
+
+Dig Deep, Go Long.
 
 [mm.dreamineering.com](https://mm.dreamineering.com/)
