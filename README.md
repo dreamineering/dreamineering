@@ -1,6 +1,6 @@
 # Dream
 
-Buidl a platform on crypto rails to enable business experiments that expand human potential with AI.
+[Buidl a platform of digital mycelium](https://www.figma.com/board/mjbfqZa4COueN5wwArjD3j/Ecosystem-of-Businesses?node-id=192-38&t=8nEgROUEAxGbUAvB-4) from intertwined DePIN Networks that connect an ecosystem of businesses that [more deterministically](https://mm.dreamineering.com/docs/progress/protocols/) expand human potential with AI through open permissionless experimentation.
 
 - [**A**rtificial Intelligence](https://mm.dreamineering.com/docs/ai/ai-agents): Agentic workforce
 - [**B**lockchain Integrity](https://mm.dreamineering.com/docs/technology/blockchain/): Build trust standards and verifiable truth
