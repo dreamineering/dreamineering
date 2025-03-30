@@ -1,6 +1,6 @@
 # Dreamineering
 
-Enable anyone to [shape the future](https://mm.dreamineering.com/shape-your-future) by sharing in business endeavours that grow value and a sense of fulfillment while teaching newcomers [how to invest](https://mm.dreamineering.com/docs/investing/) time, energy, and capital in the fast arriving [internet of intent](https://mm.dreamineering.com/docs/business/business-operations/marketing/).
+Enable anyone to have a stake in [shaping the future](https://mm.dreamineering.com/shape-your-future) by sharing in business endeavours that grow value and a sense of fulfillment while teaching newcomers [how to invest](https://mm.dreamineering.com/docs/investing/) time, energy, and capital in the fast arriving [internet of intent](https://mm.dreamineering.com/docs/business/business-operations/marketing/).
 
 Explore the future of governance using [futarchy](https://mm.dreamineering.com/docs/governance/governance-futarchy-decisions) to coordinate an ecosystem of interconnected business built upon a foundation of common crypto rails.
 
