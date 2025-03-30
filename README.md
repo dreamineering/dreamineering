@@ -1,8 +1,8 @@
 # Dreamineering
 
-Enable anyone to influence [the shape of our future](https://mm.dreamineering.com/shape-your-future) by starting a business endeavor that provide a sense of fulfillment while learning how to invest in the [internet of intent](https://mm.dreamineering.com/docs/business/business-operations/marketing/).
+Enable anyone to [shape the future](https://mm.dreamineering.com/shape-your-future) by sharing in business endeavours that grow value and a sense of fulfillment while teaching newcomers [how to invest](https://mm.dreamineering.com/docs/investing/) time, energy, and capital in the fast arriving [internet of intent](https://mm.dreamineering.com/docs/business/business-operations/marketing/).
 
-Explore using [futarchy](https://mm.dreamineering.com/docs/governance/governance-futarchy-decisions) to develop an ecosystem of interconnected business from a foundation digital mycelium of crypto protocols to onboard ordinary people of the value of adopting crypto with AI into their business operations.
+Explore the future of governance using [futarchy](https://mm.dreamineering.com/docs/governance/governance-futarchy-decisions) to coordinate an ecosystem of interconnected business built upon a foundation of common crypto rails.
 
 - [Buidl](https://mm.dreamineering.com/docs/buidl/)
 - [Analysis](https://docs.google.com/spreadsheets/d/1RUO7-AaO7BcmVwbhjapbTyECWs-4VGVYRBvLJDl1Le8/edit?gid=2088494491#gid=2088494491)
