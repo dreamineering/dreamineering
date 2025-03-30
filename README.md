@@ -1,8 +1,16 @@
-# Dream
+# Dreamineering
 
-[Buidl a platform of digital mycelium](https://www.figma.com/board/mjbfqZa4COueN5wwArjD3j/Ecosystem-of-Businesses?node-id=192-38&t=8nEgROUEAxGbUAvB-4) from intertwined DePIN Networks that connect an ecosystem of businesses that [more deterministically](https://mm.dreamineering.com/docs/progress/protocols/) expand human potential with AI through open permissionless experimentation.
+Enable anyone to influence [the shape of the future](https://mm.dreamineering.com/shape-your-future) by starting a business endeavor that provide a sense of fulfillment while learning how to invest in the internet of intent.
 
-## Technology
+Explore using [futarchy](https://mm.dreamineering.com/docs/governance/governance-futarchy-decisions) to develop an ecosystem of interconnected business from a foundation digital mycelium of crypto protocols to onboard ordinary people of the value of adopting crypto with AI into their business operations.
+
+- [Buidl](https://mm.dreamineering.com/docs/buidl/)
+- [Analysis](https://docs.google.com/spreadsheets/d/1RUO7-AaO7BcmVwbhjapbTyECWs-4VGVYRBvLJDl1Le8/edit?gid=2088494491#gid=2088494491)
+- [Diagrams](https://www.figma.com/board/mjbfqZa4COueN5wwArjD3j/Ecosystem-of-Businesses?node-id=192-38&t=8nEgROUEAxGbUAvB-4) 
+
+## Platform
+
+Leverage [disruptive technology](https://mm.dreamineering.com/docs/technology) to create an open permissionless platform for running better business experiments.
 
 - [**A**rtificial Intelligence](https://mm.dreamineering.com/docs/ai/ai-agents): Agentic workforce
 - [**B**lockchain Integrity](https://mm.dreamineering.com/docs/technology/blockchain/): Build trust standards and verifiable truth
