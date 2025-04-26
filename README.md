@@ -1,31 +1,10 @@
 # Dreamineering
 
-Enable anyone to have a stake in [shaping the future](https://mm.dreamineering.com/shape-your-future) by sharing in business endeavours that grow value and a sense of fulfillment while teaching newcomers [how to invest](https://mm.dreamineering.com/docs/investing/) time, energy, and capital in the fast arriving [internet of intent](https://mm.dreamineering.com/docs/business/business-operations/marketing/).
+[Systems that Build Agency](https://mm.dreamineering.com)
 
-Explore the future of governance using [futarchy](https://mm.dreamineering.com/docs/governance/governance-futarchy-decisions) to coordinate an ecosystem of interconnected business built upon a foundation of common crypto rails.
-
-- [Buidl](https://mm.dreamineering.com/docs/buidl/)
-- [Analysis](https://docs.google.com/spreadsheets/d/1RUO7-AaO7BcmVwbhjapbTyECWs-4VGVYRBvLJDl1Le8/edit?gid=2088494491#gid=2088494491)
-- [Diagrams](https://www.figma.com/board/mjbfqZa4COueN5wwArjD3j/Ecosystem-of-Businesses?node-id=192-38&t=8nEgROUEAxGbUAvB-4) 
-
-## Platform
-
-Leverage [disruptive technology](https://mm.dreamineering.com/docs/technology) to create an open permissionless platform for running better business experiments.
-
-- [**A**rtificial Intelligence](https://mm.dreamineering.com/docs/ai/ai-agents): Agentic workforce
-- [**B**lockchain Integrity](https://mm.dreamineering.com/docs/technology/blockchain/): Build trust standards and verifiable truth
-- [**C**rypto Incentives](https://mm.dreamineering.com/docs/crypto/): Align intents, coordinate efforts through token design
-- [**D**ePIN](https://mm.dreamineering.com/docs/technology/depin/): Orchestrate actions with Real World Assets
-
-Don't be another mindless sheep, make and effort to [Shape Our Future](https://mm.dreamineering.com/shape-your-future) before it is too late.
-
-## Engineering
-
-- [AI Coding](https://mm.dreamineering.com/docs/software/ai-coding)
-- [Agent Dev Kits](https://mm.dreamineering.com/docs/software/ai-agent-platforms/)
-- [Business Operations As Services](https://mm.dreamineering.com/docs/business/business-operations)
-
-## Tech Stack
+- Perspective
+- Predictions
+- Persuasion
 
 | [BOUNDARY](https://mm.dreamineering.com/docs/software/decisions)                                                                                              | WEB2                                                                                                                     | [WEB3](https://mm.dreamineering.com/docs/technology/blockchain)                                     |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
